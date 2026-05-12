@@ -78,12 +78,17 @@
   <img src="assets/month_mood_badge.png" alt="월별 기분 배지" width="300" />
 </p>
 
-### 6. 기록 차트
+### 6. 기록 차트 (월별 요약)
 
-며칠 분량이 모이면 "스코어" 와 "썼니" 가 자동으로 차트가 됩니다. 한 달 동안 얼마를 썼는지, 평균 점수가 어땠는지 한 번에 확인하세요.
+한 달 치 **기분 · 썼니 · 했니 · 스코어** 를 한 화면에서 볼 수 있는 통계 탭입니다.
+접었다 펼 수 있는 카드 형식으로, 기분은 상위 4개 이모티콘 GIF 크기로 한 달 요약을 보여 주고, 썼니/했니는 0을 기준으로 위·아래 막대 + 누적 꺾은선, 스코어는 항목별 꺾은선으로 표시됩니다.
 
 <p align="center">
-  <img src="assets/release_drawer_chart.png" alt="기록 차트" width="300" />
+  <img src="assets/chart_monthly_teen.png" alt="기록 차트 월별 통계 화면" width="320" />
+</p>
+
+<p align="center">
+  <img src="assets/release_drawer_chart.png" alt="기록 차트 메뉴" width="280" />
 </p>
 
 ---
