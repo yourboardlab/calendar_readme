@@ -1,0 +1,19 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Editor folders
+.vscode/
+.idea/
+.cursor/
+
+# Logs
+*.log
+
+# Local scratch / drafts (이 폴더에 두면 push 되지 않음)
+drafts/
+tmp/
+temp/
