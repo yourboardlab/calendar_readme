@@ -221,6 +221,123 @@ midnight / paper / mint / peach / lavender / sky / rose / sand 중에서 그날�
 
 ---
 
+## 개인정보처리방침 · Privacy Policy
+
+> **Google Play 등 스토어 등록용 공개 URL**  
+> `https://github.com/yourboardlab/calendar_readme#개인정보처리방침--privacy-policy`  
+> **최종 업데이트:** 2026-05-18 · **앱:** 요미 달력 (Yomi Calendar) · **운영:** yourboardlab
+
+### 한국어
+
+**1. 개요**  
+yourboardlab(이하 “개발자”)이 제공하는 **요미 달력**(Yomi Calendar)은 사용자가 직접 입력한 일기·메모·가계부·체크·기록·기분 데이터를 **사용자 기기 안에만** 저장하는 앱입니다. 별도 계정 가입, 서버 동기화, 광고 식별자 추적은 하지 않습니다.
+
+**2. 수집·처리하는 정보**
+
+| 구분 | 내용 | 저장 위치 |
+|------|------|-----------|
+| 사용자 입력 | 메모(오늘은), 가계부(썼니), 체크(했니), 숫자 기록, 기분, 설정(테마·언어·회전 등) | 기기 내부 저장소만 |
+| 백업 파일 | 설정에서 **보내기** 시 사용자가 만든 ZIP | 사용자가 선택한 위치(파일 앱 등) |
+| 공휴일 조회 | 설정 언어에 대응하는 **국가 코드**와 **연도** | 공휴일 API 요청 시에만 전송(아래 3항) |
+| 위젯 표시 | 오늘 날짜·기분·오늘은·체크 요약 등 앱과 동기화한 최소 정보 | 기기 내부(Android 위젯용 설정) |
+
+개발자는 **이름, 이메일, 전화번호, 위치, 연락처, 사진** 등을 앱 안에서 수집하지 않습니다.
+
+**3. 제3자 서비스**  
+- **공휴일 API:** [Nager.Date](https://date.nager.at) 공개 API를 사용합니다. 달력에 해당 연도·국가의 공휴일 이름을 표시하기 위해 **연도·국가 코드** 수준의 요청이 이루어질 수 있습니다. 사용자가 작성한 메모 본문 등은 전송하지 않습니다.  
+- 응답은 기기에 **캐시**되어, 이후 같은 연·월을 볼 때 네트워크 없이도 표시될 수 있습니다.
+
+**4. 이용 목적**  
+- 앱 기능 제공(달력 표시, 기록·차트, 홈 화면 위젯, 알람 알림 등)  
+- 사용자 설정 반영(언어, 테마, 기분 캐릭터 등)  
+- 사용자가 요청한 **보내기·불러오기**
+
+**5. 보관 기간**  
+- 앱 데이터: 사용자가 **삭제·앱 제거·데이터 초기화**할 때까지 기기에 보관됩니다.  
+- 공휴일 캐시: 기기 내부에 일정 기간 보관 후 갱신될 수 있습니다.
+
+**6. 제3자 제공·판매**  
+개발자는 사용자 데이터를 **판매하거나**, 광고 목적으로 **제3자와 공유하지 않습니다.**
+
+**7. 권한 (Android)**  
+| 권한 | 용도 |
+|------|------|
+| 인터넷 | 공휴일 API 조회(해당 기능 사용 시) |
+| 부팅 완료 수신 | 홈 화면 위젯 날짜 갱신 |
+| 정확한 알람 | 사용자가 설정한 **알람** 알림 예약 |
+
+**8. 아동**  
+앱은 만 13세 미만을 대상으로 설계되지 않았으며, 개발자는 아동의 개인정보를 고의로 수집하지 않습니다.
+
+**9. 국제 이전**  
+사용자 입력 데이터는 사용자 기기에만 남습니다. 공휴일 API 요청 시 해당 API 운영자의 서버가 해외에 있을 수 있습니다.
+
+**10. 이용자 권리**  
+- 앱 **설정 →보내기**로 데이터를 ZIP으로 받을 수 있습니다.  
+- **불러오기**·앱 삭제·기기 초기화로 데이터를 지울 수 있습니다.  
+- 문의: **yourboardlab@gmail.com**
+
+**11. 정책 변경**  
+중요한 변경 시 이 README를 갱신하고, 필요한 경우 앱 또는 스토어를 통해 안내할 수 있습니다.
+
+---
+
+### English
+
+**1. Overview**  
+**Yomi Calendar** (요미 달력), operated by **yourboardlab** (“we”, “developer”), stores the records you enter—memos, ledger lines, checklists, numeric logs, and moods—**on your device only**. We do not require accounts, cloud sync, or ad tracking.
+
+**2. Information we process**
+
+| Type | Examples | Where it stays |
+|------|----------|----------------|
+| Your entries | Memos, expenses, checklists, scores, moods, app settings | On-device storage only |
+| Backup ZIP | Created when you tap **Export** in Settings | Where you save the file |
+| Public holidays | **Country code** and **year** derived from your language setting | Sent only when calling the holiday API (see §3) |
+| Home widget | Today’s date, mood, short memo/checklist summaries synced from the app | On-device (Android widget preferences) |
+
+We do **not** collect your name, email, phone number, contacts, photos, or precise location inside the app.
+
+**3. Third-party services**  
+- **Holiday API:** We use the public [Nager.Date](https://date.nager.at) API to show public holiday names on the calendar. Requests may include **year** and **country code** only—not the text of your memos.  
+- Responses may be **cached on your device** for offline reuse.
+
+**4. Purposes**  
+- Provide app features (calendar, charts, home-screen widget, alarm notifications)  
+- Apply your preferences (language, theme, mood character, etc.)  
+- **Import / export** when you choose
+
+**5. Retention**  
+- App data remains on your device until you delete it, clear app data, or uninstall.  
+- Holiday cache may expire and refresh over time.
+
+**6. Sharing / sale**  
+We **do not sell** your data or share it with third parties for advertising.
+
+**7. Android permissions**
+
+| Permission | Purpose |
+|------------|---------|
+| Internet | Fetch public holidays when needed |
+| Receive boot completed | Refresh the home-screen widget date |
+| Schedule exact alarms | Deliver **alarms** you set in the app |
+
+**8. Children**  
+The app is not directed at children under 13, and we do not knowingly collect their personal information.
+
+**9. International transfers**  
+Your entries stay on your device. Holiday API requests may reach servers operated outside your country.
+
+**10. Your choices**  
+- **Export** your data as a ZIP from Settings.  
+- **Import**, uninstall, or reset the app to remove data.  
+- Contact: **yourboardlab@gmail.com**
+
+**11. Changes**  
+We may update this policy by revising this README and, when appropriate, notifying users via the app or store listing.
+
+---
+
 ## 지원 / 문의
 
 - 사용 중 문제, 새로운 기분 캐릭터 / 테마 제안, 혹은 단순한 후기 — 모두 환영합니다.
@@ -228,6 +345,7 @@ midnight / paper / mint / peach / lavender / sky / rose / sand 중에서 그날�
   - 제목 한 줄과 어떤 화면에서 일어난 일인지만 적어 주시면 충분합니다.
 - 비지니스 및 문의 사항은 e-mail 주소 : **yourboardlab@gmail.com** 으로 연락 바랍니다.
 - 홈페이지: [yourboardlab.github.io](https://yourboardlab.github.io/)
+- 개인정보처리방침: [이 README의 개인정보처리방침 섹션](https://github.com/yourboardlab/calendar_readme#개인정보처리방침--privacy-policy)
 
 ---
 
