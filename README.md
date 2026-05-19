@@ -11,6 +11,12 @@
   <img src="assets/release_drawer_calendar.png" alt="메인 달력 화면" width="300" />
 </p>
 
+### 소개 영상
+
+30초짜리 앱 소개 영상은 YouTube에서 볼 수 있습니다.
+
+▶ **[요미 달력 소개 영상 보기](https://youtu.be/QZBNNUx_LD0)**
+
 ---
 
 ## 왜 만들었나요?
@@ -345,6 +351,7 @@ We may update this policy by revising this README and, when appropriate, notifyi
   - 제목 한 줄과 어떤 화면에서 일어난 일인지만 적어 주시면 충분합니다.
 - 비지니스 및 문의 사항은 e-mail 주소 : **yourboardlab@gmail.com** 으로 연락 바랍니다.
 - 홈페이지: [yourboardlab.github.io](https://yourboardlab.github.io/)
+- 소개 영상: [YouTube — 요미 달력 소개](https://youtu.be/QZBNNUx_LD0)
 - 개인정보처리방침: [이 README의 개인정보처리방침 섹션](https://github.com/yourboardlab/calendar_readme#개인정보처리방침--privacy-policy)
 
 ---
