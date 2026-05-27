@@ -2,6 +2,8 @@
 
 > *A tiny calendar to capture your today — memos, money, todos, scores, and moods, all in one tap.*
 
+<p align="center"><strong><a href="#요미-달력--yomi-calendar">한국어</a> · <a href="#english">English</a></strong></p>
+
 매일의 작은 순간을 부담 없이 남기고, 한 달이 모이면 내 기분과 습관이 한눈에 보이는 캘린더 앱입니다.
 기본은 **계정 없이** 쓰며, 모든 기록은 **내 휴대폰 안에만** 저장됩니다. 원하면 설정에서 **로그인(이메일·비밀번호)** 을 켜 앱 실행 시 잠금을 걸 수 있습니다.
 
@@ -154,7 +156,6 @@
 
 인증 메일 발송에만 [Vercel `dailylog` 프로젝트](https://vercel.com/yourboardlab-s-projects/dailylog) API를 씁니다. **일기·가계부 본문은 전송하지 않습니다.**
 
-
 <p align="center">
   <img src="assets/auth_wizard_email.jpg" alt="가입 1단계 — 이메일" width="240" />
   &nbsp;
@@ -164,9 +165,6 @@
   <img src="assets/auth_wizard_password.jpg" alt="가입 3단계 — 비밀번호" width="240" />
   &nbsp;
   <img src="assets/auth_gate_login.jpg" alt="앱 실행 시 로그인 화면" width="240" />
-</p>
-<p align="center">
-  <img src="assets/auth_settings_login.jpg" alt="설정 — 로그인 기능 사용 및 가입 완료" width="300" />
 </p>
 
 ---
@@ -258,13 +256,129 @@ midnight / paper / mint / peach / lavender / sky / rose / sand 중에서 그날�
 
 ## 데이터는 어디 저장되나요?
 
-- **전부 휴대폰 안에만** 저장됩니다. 서버에 전송되지 않습니다.
-- 로그인, 회원가입, 광고 식별자 추적 — 없습니다.
-- 백업이 필요할 땐 **설정 → 내보내기** 로 기록을 **하나의 ZIP 파일**로 저장할 수 있고, **불러오기** 로 새 기기에서 그대로 복원할 수 있습니다.
+- **달력·메모·가계부·기분 등 기록은 전부 휴대폰 안에만** 저장됩니다. 일기 본문은 서버로 보내지 않습니다.
+- **로그인은 선택**입니다. 켠 경우 이메일·**암호화된 비밀번호 해시**·마지막 로그인 이메일만 기기에 남습니다. 클라우드 회원가입·동기화·광고 추적은 없습니다.
+- 백업이 필요할 땐 **설정 →보내기**로 **ZIP(v4)** 하나로 저장합니다. F.1.07부터 **설정과 로그인(해시)** 도 ZIP에 포함되며, **불러오기**로 새 기기에서 복원할 수 있습니다.
 
 <p align="center">
   <img src="assets/auth_settings_login.jpg" alt="설정 화면 (언어·보내기·로그인)" width="300" />
 </p>
+
+---
+
+## English {#english}
+
+# Yomi Calendar · 요미 달력
+
+> *A tiny calendar to capture your today — memos, money, todos, scores, and moods, all in one tap.*
+
+<p align="center"><strong><a href="#요미-달력--yomi-calendar">한국어</a> · <a href="#english">English</a></strong></p>
+
+Yomi Calendar helps you log small daily moments without pressure. When a month fills up, your moods and habits become visible at a glance.
+By default there is **no account** — everything stays **on your phone only**. Optionally enable **sign-in (email + password)** in Settings to lock the app on launch.
+
+**Latest release:** **F.1.07** (2026-05-27) — optional sign-in, ZIP backup v4 (settings + sign-in), settings UI cleanup, month mood badge tie-breaker favors the **most recent mood**, clearer icons ([changelog](#changelog-f107-en)).
+
+The app may appear as **요미 달력**, **Yomi Calendar**, or another localized name in the store, launcher, and widget picker.
+
+### This month's mood badges
+
+Animated **GIF badges** at the top of the calendar show your top moods for the month.
+The **large left badge** is **#1 (most logged)**. If counts are **tied**, the **most recently logged mood** wins on the left.
+The **small right badge** is **#2**. One mood only → same character on both sides; none logged → badges hidden.
+
+### 7. Home-screen widget (Android)
+
+Add a **1×1 widget** on your **Android home screen**. Find the app (**요미 달력**, **Yomi Calendar**, etc.) in the widget list and place it on your launcher.
+
+- **Shows:** today's **day-of-month number** and the **mood character** you last set in the app.
+- **Android 12+ (API 31):** mood **GIF** animates in the widget.
+- **Android 11 and below:** static **bear icon** (GIF in home widgets is unreliable on older versions).
+- **Tap:** opens the app. After changing mood, the widget redraws shortly; remove and re-add if it looks stale.
+
+> Works **offline**; reads mood settings stored on the device.
+
+### 8. Sign-in (optional) — F.1.07
+
+An **optional app lock** — **not** a cloud account. Your calendar entries and password **plaintext never leave the device**; the password is stored **encrypted on-device**. A **one-time verification code** is emailed only when you set up or reset the lock.
+
+If someone steals the phone and extracts only the **encrypted hash** for offline guessing (rough sense; varies by password and hardware):
+
+| Attacker hardware (offline) | Example password | Rough time (order of magnitude) |
+|-----------------------------|------------------|----------------------------------|
+| **Mid-range PC** (6-core CPU or consumer GPU) | Strong 10–12 chars, hard to guess | **Years to decades+** |
+| Same PC | 8 chars, common words/birthdays | **Days to months** |
+| **Phone only** (no PC) | Same as above | Often **~10× slower** than a PC → longer |
+
+Stronger passwords improve safety after loss or theft; there is no absolute guarantee.
+
+Turn on **「Use sign-in」** at the bottom of Settings:
+
+- **Setup:** email → enter **verification code from email** (valid **5 minutes** after send) → password (letters, numbers, symbols, **8+ chars**)
+- **Launch:** unlock with registered email + password
+- **Reset:** discard old password on the sign-in screen → verify same email → new password
+- **Show password:** **eye icon** beside fields
+- **Storage:** **encrypted hash only** on device; plaintext is never stored
+
+Verification email uses the [Vercel `dailylog` project](https://vercel.com/yourboardlab-s-projects/dailylog) API only. **Diary and ledger bodies are never sent.**
+
+<p align="center">
+  <img src="assets/auth_wizard_email.jpg" alt="Setup step 1 — email" width="240" />
+  &nbsp;
+  <img src="assets/auth_wizard_verify.jpg" alt="Setup step 2 — verification code (5 min)" width="240" />
+</p>
+<p align="center">
+  <img src="assets/auth_wizard_password.jpg" alt="Setup step 3 — password" width="240" />
+  &nbsp;
+  <img src="assets/auth_gate_login.jpg" alt="Sign-in screen at launch" width="240" />
+</p>
+<p align="center">
+  <img src="assets/auth_settings_login.jpg" alt="Settings — sign-in enabled" width="300" />
+</p>
+
+### Landscape mode
+
+Rotate for more on screen: **calendar** = calendar left + cards right; **monthly charts** = **2×2** card grid.
+
+**Allow screen rotation** in Settings (F.1.07 order: **Language → rotation → mood character → theme → export/import → sign-in**).
+
+| Toggle | Behavior |
+|--------|----------|
+| **OFF (default)** | Always **portrait** |
+| **ON** | **Portrait ↔ landscape** follows device rotation |
+
+### Where is my data?
+
+- **All entries stay on your device.** Diary text is not uploaded.
+- **Sign-in is optional.** When enabled, only email, **encrypted password hash**, and last sign-in email are stored on-device. No cloud signup, sync, or ad tracking.
+- **Export → ZIP (v4)** in Settings; from F.1.07 includes **settings + sign-in (hash)**. **Import** on a new device restores everything.
+
+### FAQ (English)
+
+**Q. Does it work offline?**  
+Yes for memos, ledger, checklist, stats, moods, and the widget. Public holidays may need one online fetch per year/country, then cache locally.
+
+**Q. Move data to another phone?**  
+**Export → ZIP**, then **Import** on the new device. ZIP v4 includes settings and optional sign-in hash; use the same password to unlock if sign-in was enabled.
+
+**Q. Must I sign in?**  
+No — off by default. Enable in Settings when you want an app lock.
+
+**Q. Verification email not arriving?**  
+Check network, spam, and typos. Sent via [Vercel dailylog](https://vercel.com/yourboardlab-s-projects/dailylog); heavy use may be rate-limited.
+
+**Q. Home widget?**  
+Long-press the home screen → **Widgets** → add this app's **1×1** widget. See **§7** above.
+
+### Changelog (F.1.07) {#changelog-f107-en}
+
+| Version | Date | Summary |
+|---------|------|---------|
+| **F.1.07** | 2026-05-27 | Optional sign-in, ZIP v4, settings UI, mood badge tie→recent, icon readability |
+| F.1.06 | 2026-05 | Widget stability Android 14–16, calendar swipe UX |
+| F.1.04 | 2026-05-19 | Holidays API, home widget, landscape |
+
+Code release notes: [yourboardlab/dailylog `release.txt`](https://github.com/yourboardlab/dailylog/blob/main/release.txt)
 
 ---
 
@@ -334,18 +448,20 @@ yourboardlab(이하 “개발자”)이 제공하는 **요미 달력**(Yomi Cale
 ### English
 
 **1. Overview**  
-**Yomi Calendar** (요미 달력), operated by **yourboardlab** (“we”, “developer”), stores the records you enter—memos, ledger lines, checklists, numeric logs, and moods—**on your device only**. We do not require accounts, cloud sync, or ad tracking.
+**Yomi Calendar** (요미 달력), operated by **yourboardlab** (“we”, “developer”), stores the records you enter—memos, ledger lines, checklists, numeric logs, and moods—**on your device only**. **Sign-in is optional**; when enabled, only your email and **encrypted password hash** stay on the device. Verification emails use the [Vercel dailylog](https://vercel.com/yourboardlab-s-projects/dailylog) API; diary and ledger bodies are never sent. We do not offer cloud sync or ad tracking.
 
 **2. Information we process**
 
 | Type | Examples | Where it stays |
 |------|----------|----------------|
 | Your entries | Memos, expenses, checklists, scores, moods, app settings | On-device storage only |
-| Backup ZIP | Created when you tap **Export** in Settings | Where you save the file |
+| Sign-in (optional) | Email, **encrypted password hash**, last sign-in email | On-device storage only |
+| Verification email | Email address, verification code, signature when you set up or reset sign-in | Vercel `dailylog` → SMTP (delivered to your mailbox only) |
+| Backup ZIP | ZIP **v4** created when you tap **Export** in Settings (includes settings + optional sign-in hash) | Where you save the file |
 | Public holidays | **Country code** and **year** derived from your language setting | Sent only when calling the holiday API (see §3) |
 | Home widget | Today’s date, mood, short memo/checklist summaries synced from the app | On-device (Android widget preferences) |
 
-We do **not** collect your name, email, phone number, contacts, photos, or precise location inside the app.
+We do **not** collect your name, phone number, contacts, photos, or precise location inside the app. We do **not** collect email inside the app except when you optionally enable sign-in.
 
 **3. Third-party services**  
 - **Holiday API:** We use the public [Nager.Date](https://date.nager.at) API to show public holiday names on the calendar. Requests may include **year** and **country code** only—not the text of your memos.  
