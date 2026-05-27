@@ -25,14 +25,17 @@
 
 ## 왜 만들었나요?
 
-다이어리 앱들은 보통 둘 중 하나입니다.
+많은 기록 앱은 **목록**이 중심입니다. 오늘 쓴 글, 어제 쓴 글—날짜는 옆에 붙는 정보뿐이죠.
 
-- 너무 화려해서 매일 켜기 부담스럽거나,
-- 너무 단순해서 한 달 뒤 돌아보면 아무 의미가 없거나.
+**요미 달력**은 **달력 격자**가 본체입니다. 한 달을 펼치면, 날짜 칸만 봐도 그날이 어떤 하루였는지 윤곽이 드러납니다.
 
-**요미 달력** 은 그 중간을 노렸습니다.
-한 번에 한 문장, 한 줄짜리 지출, 체크박스 하나, 점수 하나 — 그리고 가장 중요한 **오늘의 기분**.
-이만큼만 매일 남기면, 한 달이 모일 즈음 달력 안에서 자기 자신이 보입니다.
+- 각 날짜 **네 모서리**에 메모·지출·체크·숫자 기록 여부가 색으로 표시되고,
+- **가운데**에는 그날 고른 **기분 캐릭터**가 들어가며,
+- 달 상단에는 이번 달을 대표하는 **기분 GIF 배지**가 움직입니다.
+
+입력은 일부러 가볍게 설계했습니다. 짧은 한 줄 메모, 한 줄 가계부, 체크 하나, 숫자 하나—부담 없이 채우다 보면 칸이 차오릅니다. **기록 차트**에서는 기분·지출·습관·수치가 한 달 단위로 이어져 보이고, 가로 모드에서는 달력과 카드가 나란히 펼쳐집니다. 홈 화면 **1×1 위젯**으로는 오늘 날짜와 기분을 바로 확인할 수 있습니다.
+
+계정 없이 쓰고, 데이터는 **휴대폰 안에만** 둡니다. 필요하면 ZIP으로 옮기고, 잠금은 선택입니다. **“달력 위에 하루가 쌓이는”** 방식—그것이 이 앱의 차별점입니다.
 
 ---
 
@@ -283,6 +286,20 @@ By default there is **no account** — everything stays **on your phone only**. 
 **Latest release:** **F.1.07** (2026-05-27) — optional sign-in, ZIP backup v4 (settings + sign-in), settings UI cleanup, month mood badge tie-breaker favors the **most recent mood**, clearer icons ([changelog](#changelog-f107-en)).
 
 The app may appear as **요미 달력**, **Yomi Calendar**, or another localized name in the store, launcher, and widget picker.
+
+### Why Yomi Calendar?
+
+Many journaling apps center on a **feed**—today’s entry, yesterday’s entry—with the date off to the side.
+
+**Yomi Calendar** centers on the **month grid**. Open a month and each day cell already tells a story:
+
+- **Four corner icons** show whether you logged a memo, expense, checklist, or number that day,
+- the **center** holds that day’s **mood character**,
+- and **animated mood badges** at the top summarize the month.
+
+Inputs stay light on purpose: a short memo line, one expense line, a checkbox, a number—fill them without pressure and the cells gain color. The **monthly charts** tab connects mood, spending, habits, and stats across the whole month; landscape mode lays the calendar beside your cards. A **1×1 home widget** shows today’s date and mood at a glance.
+
+No account required; data stays **on your device**. Export to ZIP when you need to move devices; app lock is optional. The difference is simple: **your days stack on the calendar**, not in an endless list.
 
 ### This month's mood badges
 
