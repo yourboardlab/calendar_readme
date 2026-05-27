@@ -25,17 +25,19 @@
 
 ## 왜 만들었나요?
 
-많은 기록 앱은 **목록**이 중심입니다. 오늘 쓴 글, 어제 쓴 글—날짜는 옆에 붙는 정보뿐이죠.
+일정만 등록해 두고, 알림용으로 **전락한 달력 앱**에 생기를 불어 넣고 싶었습니다.
 
-**요미 달력**은 **달력 격자**가 본체입니다. 한 달을 펼치면, 날짜 칸만 봐도 그날이 어떤 하루였는지 윤곽이 드러납니다.
+하루에 가장 중요한 것은, 그날의 **내 기분**이 아닐까 생각해 봤습니다. 앱을 켜고 **귀여운 캐릭터**로 오늘의 내 기분을 표현할 수 있으면 좋겠다고 생각했습니다.
 
-- 각 날짜 **네 모서리**에 메모·지출·체크·숫자 기록 여부가 색으로 표시되고,
-- **가운데**에는 그날 고른 **기분 캐릭터**가 들어가며,
-- 달 상단에는 이번 달을 대표하는 **기분 GIF 배지**가 움직입니다.
+하루 동안 하는 일이라곤—돈 쓰는 일, 숙제나 과제, 프로젝트 같은 **했어야 하는 일**들로 가득 차 있었습니다. 나름 운동을 하는 분들은 그에 맞는 **스코어**도 등록하리라 예상했습니다. 기록하고 싶은 부수적인 것들은, 이 정도면 **하루의 나**를 다 표현할 수 있으리라 생각했습니다.
 
-입력은 일부러 가볍게 설계했습니다. 짧은 한 줄 메모, 한 줄 가계부, 체크 하나, 숫자 하나—부담 없이 채우다 보면 칸이 차오릅니다. **기록 차트**에서는 기분·지출·습관·수치가 한 달 단위로 이어져 보이고, 가로 모드에서는 달력과 카드가 나란히 펼쳐집니다. 홈 화면 **1×1 위젯**으로는 오늘 날짜와 기분을 바로 확인할 수 있습니다.
+그냥, 그래서 만들었습니다.
 
-계정 없이 쓰고, 데이터는 **휴대폰 안에만** 둡니다. 필요하면 ZIP으로 옮기고, 잠금은 선택입니다. **“달력 위에 하루가 쌓이는”** 방식—그것이 이 앱의 차별점입니다.
+혹시나 누가 볼까 봐, 앱에 **비밀번호**도 설정할 수 있게 해 두었으니, 숨기고 싶은 내용도 마음껏 쓰셔도 됩니다.
+
+이 앱에서 가장 좋은 점은 **광고도, 가입도 없다**는 것입니다. 당신의 휴대폰 안에만 **안전하게 암호화**되어 있으니, 안심하셔도 됩니다.
+
+**이 정도면, 이 앱을 만든 이유는 충분한가요?**
 
 ---
 
@@ -289,17 +291,19 @@ The app may appear as **요미 달력**, **Yomi Calendar**, or another localized
 
 ### Why Yomi Calendar?
 
-Many journaling apps center on a **feed**—today’s entry, yesterday’s entry—with the date off to the side.
+I wanted to breathe life back into calendar apps that had become little more than **schedules and notification reminders**.
 
-**Yomi Calendar** centers on the **month grid**. Open a month and each day cell already tells a story:
+What matters most in a day, I thought, is **how you felt**. I wanted you to open the app and express today’s mood with **cute characters**.
 
-- **Four corner icons** show whether you logged a memo, expense, checklist, or number that day,
-- the **center** holds that day’s **mood character**,
-- and **animated mood badges** at the top summarize the month.
+A day is also full of the things you actually do—**spending money**, homework and assignments, **projects** you need to finish. People who exercise might log **scores** that fit their routine. I figured that much—on top of mood—was enough to capture **who you were that day**.
 
-Inputs stay light on purpose: a short memo line, one expense line, a checkbox, a number—fill them without pressure and the cells gain color. The **monthly charts** tab connects mood, spending, habits, and stats across the whole month; landscape mode lays the calendar beside your cards. A **1×1 home widget** shows today’s date and mood at a glance.
+So I built it. That’s really the reason.
 
-No account required; data stays **on your device**. Export to ZIP when you need to move devices; app lock is optional. The difference is simple: **your days stack on the calendar**, not in an endless list.
+If you’re worried someone might peek, you can set an **app password** and write what you’d rather keep private.
+
+The best parts, to me: **no ads, no sign-up**. Everything stays **encrypted on your phone**—you can use it with peace of mind.
+
+**Is that enough of a reason this app exists?**
 
 ### This month's mood badges
 
