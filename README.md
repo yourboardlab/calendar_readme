@@ -7,7 +7,7 @@
 매일의 작은 순간을 부담 없이 남기고, 한 달이 모이면 내 기분과 습관이 한눈에 보이는 캘린더 앱입니다.
 기본은 **계정 없이** 쓰며, 모든 기록은 **내 휴대폰 안에만** 저장됩니다. 원하면 설정에서 **로그인(이메일·비밀번호)** 을 켜 앱 실행 시 잠금을 걸 수 있습니다.
 
-**최신 버전:** **F.1.07** (2026-05-27) — 선택 로그인, ZIP 백업에 설정·로그인 포함, 월 기분 배지 동률 시 최근 기분 우선 등 ([변경 이력](#변경-이력-f107))
+**최신 버전:** **F.1.08** (2026-05-29) — 달력에 오늘은 일정 표시(설정), 썼니 $ 아이콘, 기분 버튼 크기 조정 등 ([변경 이력](#변경-이력-f108))
 
 스토어·런처·위젯 목록에는 **요미 달력**, **Yomi Calendar**, 또는 빌드 설정에 따른 영문 표기가 함께 쓰일 수 있습니다. 이 문서에서는 제품을 **요미 달력**으로 통칭합니다.
 
@@ -47,6 +47,8 @@
 
 항목당 **최대 10자**까지 짧게 끊어 오늘을 기록합니다. (처음에는 한글 기준 5자였으나 다국어를 위해 10자로 넓혔습니다.) "회의", "저녁 약속", "야근" 같은 식으로요.
 긴 일기가 부담스러운 분에게 가장 잘 맞는 입력 방식입니다.
+
+설정에서 **「달력에 오늘은 일정 표시」** 를 켜면, 오늘은에 적어 둔 항목이 **있는 날**은 달력 칸 가운데에 **기분 캐릭터 대신 일정을 최대 3줄**까지 미리 볼 수 있습니다. (글씨는 홈 위젯 요약과 비슷하게 작지만 읽기 쉽게 표시합니다.) 일정이 없는 날은 기존처럼 기분만 표시됩니다. 기본값은 **꺼짐**입니다.
 
 <p align="center">
   <img src="assets/release_hdr_memo.png" alt="오늘은(메모) 카드" width="300" />
@@ -104,10 +106,10 @@
 | 위치 | 카테고리 | 색 |
 |------|----------|------|
 | 좌상단 | 오늘은(메모) | 핑크 하트 |
-| 우상단 | 썼니(가계부) | 파란 지폐 |
+| 우상단 | 썼니(가계부) | 파란 **$** |
 | 좌하단 | 했니(체크리스트) | 초록 체크 |
 | 우하단 | 기록(숫자 모음) | 보라 꺾은선 |
-| 가운데 | 그날의 기분(있을 때만) | 캐릭터 PNG |
+| 가운데 | 그날의 **기분**(기본) 또는 **오늘은 일정**(설정 ON·항목 있을 때, 최대 3줄) | 캐릭터 PNG / 짧은 텍스트 |
 
 <p align="center">
   <img src="assets/calendar_landscape.png" alt="가로 모드 달력 — 4 모서리 인디케이터" width="520" />
@@ -188,7 +190,7 @@
 
 ### 회전 동작 설정
 
-설정의 **「화면 회전 허용」** 토글로 동작을 고를 수 있습니다. (F.1.07 기준 설정 순서: **언어 → 화면 회전 → 기분 캐릭터 → 색상 테마 → 데이터보내기/불러오기 → 로그인**)
+설정의 **「화면 회전 허용」** 토글로 동작을 고를 수 있습니다. (F.1.08 기준 설정 순서: **언어 → 화면 회전 → 달력에 오늘은 일정 표시 → 기분 캐릭터 → 색상 테마 → 데이터보내기/불러오기 → 로그인**)
 
 | 토글 | 동작 |
 |------|------|
@@ -285,7 +287,7 @@ midnight / paper / mint / peach / lavender / sky / rose / sand 중에서 그날�
 Yomi Calendar helps you log small daily moments without pressure. When a month fills up, your moods and habits become visible at a glance.
 By default there is **no account** — everything stays **on your phone only**. Optionally enable **sign-in (email + password)** in Settings to lock the app on launch.
 
-**Latest release:** **F.1.07** (2026-05-27) — optional sign-in, ZIP backup v4 (settings + sign-in), settings UI cleanup, month mood badge tie-breaker favors the **most recent mood**, clearer icons ([changelog](#changelog-f107-en)).
+**Latest release:** **F.1.08** (2026-05-29) — optional **Today items on calendar** (Settings), clearer **$** ledger icon, slightly larger mood button on Today card ([changelog](#changelog-f108-en)).
 
 The app may appear as **요미 달력**, **Yomi Calendar**, or another localized name in the store, launcher, and widget picker.
 
@@ -310,6 +312,10 @@ The best parts, to me: **no ads, no sign-up**. Everything stays **encrypted on y
 Animated **GIF badges** at the top of the calendar show your top moods for the month.
 The **large left badge** is **#1 (most logged)**. If counts are **tied**, the **most recently logged mood** wins on the left.
 The **small right badge** is **#2**. One mood only → same character on both sides; none logged → badges hidden.
+
+### Today on the calendar (F.1.08)
+
+In Settings, turn on **「Show Today items on calendar」** to preview up to **3 short Today lines** in the center of a day cell **when you have entries**—instead of the mood character. Days without entries still show mood. Off by default. Date numbers and cell layout stay the same.
 
 ### 7. Home-screen widget (Android)
 
@@ -364,7 +370,7 @@ Verification email uses the [Vercel `dailylog` project](https://vercel.com/yourb
 
 Rotate for more on screen: **calendar** = calendar left + cards right; **monthly charts** = **2×2** card grid.
 
-**Allow screen rotation** in Settings (F.1.07 order: **Language → rotation → mood character → theme → export/import → sign-in**).
+**Allow screen rotation** in Settings (F.1.08 order: **Language → rotation → show Today on calendar → mood character → theme → export/import → sign-in**).
 
 | Toggle | Behavior |
 |--------|----------|
@@ -394,6 +400,15 @@ Check network, spam, and typos. Sent via [Vercel dailylog](https://vercel.com/yo
 **Q. Home widget?**  
 Long-press the home screen → **Widgets** → add this app's **1×1** widget. See **§7** above.
 
+### Changelog (F.1.08) {#changelog-f108-en}
+
+| Version | Date | Summary |
+|---------|------|---------|
+| **F.1.08** | 2026-05-29 | Show Today items on calendar (Settings), $ ledger icon, larger Today mood button |
+| **F.1.07** | 2026-05-27 | Optional sign-in, ZIP v4, settings UI, mood badge tie→recent, icon readability |
+| F.1.06 | 2026-05 | Widget stability Android 14–16, calendar swipe UX |
+| F.1.04 | 2026-05-19 | Holidays API, home widget, landscape |
+
 ### Changelog (F.1.07) {#changelog-f107-en}
 
 | Version | Date | Summary |
@@ -410,7 +425,7 @@ Code release notes: [yourboardlab/dailylog `release.txt`](https://github.com/you
 
 > **Google Play 등 스토어 등록용 공개 URL**  
 > `https://github.com/yourboardlab/calendar_readme#개인정보처리방침--privacy-policy`  
-> **최종 업데이트:** 2026-05-27 · **앱:** 요미 달력 (Yomi Calendar) **F.1.07** · **운영:** yourboardlab
+> **최종 업데이트:** 2026-05-29 · **앱:** 요미 달력 (Yomi Calendar) **F.1.08** · **운영:** yourboardlab
 
 ### 한국어
 
@@ -567,7 +582,16 @@ We may update this policy by revising this README and, when appropriate, notifyi
 
 ---
 
-## 변경 이력 (F.1.07)
+## 변경 이력 (F.1.08) {#변경-이력-f108}
+
+| 버전 | 날짜 | 요약 |
+|------|------|------|
+| **F.1.08** | 2026-05-29 | 달력에 오늘은 일정 표시(설정), 썼니 $ 아이콘, 오늘은 기분 버튼 크기 조정 |
+| **F.1.07** | 2026-05-27 | 선택 로그인(이메일 인증·재설정), ZIP v4(설정·로그인 포함), 설정 UI 정리, 월 기분 배지 동률→최근 우선, 아이콘 가독성 |
+| F.1.06 | 2026-05 | Android 14~16 위젯 안정화, 달력 스와이프·월 이동 UX |
+| F.1.04 | 2026-05-19 | 공휴일 API, 홈 위젯, 가로 모드 |
+
+## 변경 이력 (F.1.07) {#변경-이력-f107}
 
 | 버전 | 날짜 | 요약 |
 |------|------|------|
