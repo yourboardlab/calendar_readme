@@ -23,6 +23,36 @@
 
 ---
 
+## F.1.08에서 달라진 점 {#f108-highlights}
+
+### 달력에 오늘은 일정 표시 (설정)
+
+달력 한눈에 **오늘의 짧은 메모**를 보고 싶을 때 쓰는 옵션입니다. **설정 → 「달력에 오늘은 일정 표시」** 를 켜면:
+
+- **오늘은**에 글자가 **한 줄이라도 있는 날** → 달력 칸 **가운데**에 기분 캐릭터 대신 **일정 최대 3줄** 표시
+- **오늘은**이 비어 있는 날 → 예전처럼 **기분 캐릭터**만 표시 (기분을 골라 둔 경우)
+- **날짜 숫자 크기**와 셀 전체 높이는 그대로 — 기분이 쓰던 영역만 재사용
+- 글씨는 **홈 위젯**에 오늘은 요약을 넣을 때와 비슷하게 **작지만 굵게**, 한 줄이 길면 말줄임
+
+기본값은 **꺼짐**입니다. 기분 캐릭터 중심으로 쓰다가, “이번 달 일정만 달력에서 훑고 싶다” 할 때 켜 두면 됩니다.
+
+<p align="center">
+  <img src="assets/f108_setting_calendar_memo_on_cells.jpg" alt="설정 — 달력에 오늘은 일정 표시 토글" width="300" />
+  &nbsp;
+  <img src="assets/f108_calendar_memo_preview.jpg" alt="달력 칸에 오늘은 일정 3줄 표시" width="300" />
+</p>
+<p align="center"><em>왼쪽: 설정 토글 · 오른쪽: 달력 칸에 표시된 오늘은 텍스트 (최대 3줄)</em></p>
+
+### 썼니 **$** 아이콘
+
+**썼니(가계부)** 는 상단 카테고리 탭과 각 날짜 셀 **하단 마커**에도 작은 아이콘으로 표시됩니다. F.1.07까지 쓰던 **지폐 모양**은 칸이 작을 때 윤곽이 잘 안 보였습니다. F.1.08부터 **파란색 $ (달러 기호)** 로 바꿔 **썼니** 칸을 더 빨리 구분할 수 있습니다. (오늘은=핑크 하트, 했니=초록 체크, 기록=보라 꺾은선은 그대로입니다.)
+
+### 오늘은 카드 — 기분 버튼 크기
+
+날짜를 눌렀을 때 **오늘은** 카드 헤더 오른쪽 **기분 선택 버튼** 아이콘만 **조금 키웠습니다** (24px → 28px). 달력 칸 가운데 **기분 캐릭터**나 **날짜 숫자** 크기는 바꾸지 않았습니다.
+
+---
+
 ## 왜 만들었나요?
 
 일정만 등록해 두고, 알림용으로 **전락한 달력 앱**에 생기를 불어 넣고 싶었습니다.
@@ -48,7 +78,7 @@
 항목당 **최대 10자**까지 짧게 끊어 오늘을 기록합니다. (처음에는 한글 기준 5자였으나 다국어를 위해 10자로 넓혔습니다.) "회의", "저녁 약속", "야근" 같은 식으로요.
 긴 일기가 부담스러운 분에게 가장 잘 맞는 입력 방식입니다.
 
-설정에서 **「달력에 오늘은 일정 표시」** 를 켜면, 오늘은에 적어 둔 항목이 **있는 날**은 달력 칸 가운데에 **기분 캐릭터 대신 일정을 최대 3줄**까지 미리 볼 수 있습니다. (글씨는 홈 위젯 요약과 비슷하게 작지만 읽기 쉽게 표시합니다.) 일정이 없는 날은 기존처럼 기분만 표시됩니다. 기본값은 **꺼짐**입니다.
+설정에서 **「달력에 오늘은 일정 표시」** 를 켜면, 오늘은에 적어 둔 항목이 **있는 날**은 달력 칸 가운데에 **기분 캐릭터 대신 일정을 최대 3줄**까지 미리 볼 수 있습니다. (글씨는 홈 위젯 요약과 비슷하게 작지만 읽기 쉽게 표시합니다.) 일정이 없는 날은 기존처럼 기분만 표시됩니다. 기본값은 **꺼짐**입니다. 스크린샷과 자세한 동작은 **[F.1.08에서 달라진 점](#f108-highlights)** 을 참고하세요.
 
 <p align="center">
   <img src="assets/release_hdr_memo.png" alt="오늘은(메모) 카드" width="300" />
@@ -307,6 +337,36 @@ The best parts, to me: **no ads, no sign-up**. Everything stays **encrypted on y
 
 **Is that enough of a reason this app exists?**
 
+### What's new in F.1.08 {#f108-highlights-en}
+
+#### Show Today items on calendar (Settings)
+
+Turn on **Settings → 「Show Today items on calendar」** when you want **short Today memos** visible on the month grid:
+
+- **Any Today line that day** → up to **3 lines** in the **center** of the cell instead of the mood character
+- **No Today entries** → mood character only (if you picked one)
+- **Date number size** and cell layout unchanged — only reuses the mood area
+- Text is **small but bold**, like the home widget summary; long lines ellipsize
+
+**Off by default.** Keep mood-first; flip it on when you want a quick scan of the month’s memos.
+
+<p align="center">
+  <img src="assets/f108_setting_calendar_memo_on_cells.jpg" alt="Settings — Show Today items on calendar toggle" width="300" />
+  &nbsp;
+  <img src="assets/f108_calendar_memo_preview.jpg" alt="Calendar cells showing Today memo lines" width="300" />
+</p>
+<p align="center"><em>Left: Settings toggle · Right: Today lines on the calendar (up to 3)</em></p>
+
+#### Clearer **$** icon for Spent? (ledger)
+
+**Spent?** appears on the top category tabs and on each day’s **bottom marker row**. The old **banknote** icon was hard to read in tiny cells. F.1.08 uses a **blue $** so ledger days stand out. (Today=pink heart, Done?=green check, Stats=purple line chart unchanged.)
+
+#### Slightly larger mood button on the Today card
+
+The **mood picker** in the **Today** card header is a bit larger (24px → 28px). Calendar **day numbers** and **center mood characters** are unchanged.
+
+---
+
 ### This month's mood badges
 
 Animated **GIF badges** at the top of the calendar show your top moods for the month.
@@ -315,7 +375,7 @@ The **small right badge** is **#2**. One mood only → same character on both si
 
 ### Today on the calendar (F.1.08)
 
-In Settings, turn on **「Show Today items on calendar」** to preview up to **3 short Today lines** in the center of a day cell **when you have entries**—instead of the mood character. Days without entries still show mood. Off by default. Date numbers and cell layout stay the same.
+In Settings, turn on **「Show Today items on calendar」** to preview up to **3 short Today lines** in the center of a day cell **when you have entries**—instead of the mood character. Days without entries still show mood. Off by default. Date numbers and cell layout stay the same. See **[What's new in F.1.08](#f108-highlights-en)** for screenshots and details.
 
 ### 7. Home-screen widget (Android)
 
