@@ -167,7 +167,7 @@
 - **비밀번호 표시:** 입력 칸 옆 **눈 아이콘**으로 보기/숨기기
 - **저장:** 비밀번호는 기기 안에 **암호화된 해시**로만 남고, 평문은 저장되지 않습니다
 
-인증 메일 발송에만 [Vercel `dailylog` 프로젝트](https://vercel.com/yourboardlab-s-projects/dailylog) API를 씁니다. **일기·가계부 본문은 전송하지 않습니다.**
+인증 메일 발송 시 인증 서버를 사용합니다. (현재는 무료로 감당할 수 있는 수준이나, 추후에는 정책이 변경될 수 있습니다.)
 
 <p align="center">
   <img src="assets/auth_wizard_email.jpg" alt="가입 1단계 — 이메일" width="240" />
@@ -228,7 +228,7 @@
 |------|------|
 | 가입 보너스 | **+29 코인** (1회) |
 | 출석 체크 | **+1 코인** / 일 |
-| 일정 공유 | **−1 코인** / 공유 1건 |
+| 일정 공유 | **−1 코인** / 건 (송·수신 각자) |
 | 이모티콘 셋 구매 | **−30 코인** / 셋 1종 |
 | 코인 충전 (현금) | *(준비 중)* |
 
@@ -236,7 +236,7 @@
 
 도시락 계정이 있으면, 선택한 달의 **오늘은** · **했니** 항목을 상대방의 도시락 계정(이메일)으로 보낼 수 있습니다.
 
-- **공유 비용**: 1회당 **1 Yomi Coin** 소모
+- **공유 비용**: 1회당 **1 Yomi Coin** 소모 (송신·수신 각자 1 Coin 소모)
 - **공유 항목 선택**: 오늘은 / 했니 카테고리를 개별 선택 가능
 - **수신**: 상대방 계정에 해당 월 항목이 추가 (기존 데이터 삭제 없음)
 - **만료**: 해당 월 말일 자정 기준
@@ -373,10 +373,10 @@ midnight / paper / mint / peach / lavender / sky / rose / sand 중에서 그날�
 아니요. 기본은 로그인 없이 사용합니다. 원할 때만 설정에서 켜면 됩니다.
 
 **Q. 인증 메일이 안 와요.**  
-인터넷·스팸함·이메일 오타를 확인해 주세요. 발송은 [Vercel dailylog](https://vercel.com/yourboardlab-s-projects/dailylog) 백엔드를 쓰며, 과도한 요청 시 일시 제한될 수 있습니다.
+인터넷·스팸함·이메일 오타를 확인해 주세요. 발송은 현재 무료 백엔드를 사용 중이나, 사용자가 많아지거나 무료 사용량을 초과하면 유료 백엔드를 도입해야 할 수 있습니다. 이 경우 Coin 정책이 변경될 수 있음을 미리 알려드립니다.
 
 **Q. 사용료가 있나요?**  
-광고 없는 무료 앱입니다. Yomi Coin을 사용하는 일부 기능(일정 공유, 이모티콘 셋)은 코인이 필요하며, 매일 출석 체크로 무료 적립할 수 있습니다.
+광고 없는 무료 앱입니다. Yomi Coin을 사용하는 일부 기능(일정 공유, 이모티콘 셋)은 코인이 필요하며, 매일 출석 체크로 무료 적립할 수 있습니다. 앞으로 앱을 예쁘고 귀엽게 만들 수 있는 귀여운 캐릭터 셋 등을 준비 중이니 많은 이용 부탁드립니다. (저희도 먹고 살아야죠.)
 
 **Q. 홈 화면 위젯은 어떻게 쓰나요?**  
 안드로이드에서 바탕화면을 길게 누른 뒤 **위젯**을 선택하고, 목록에서 이 앱의 위젯을 찾아 추가하면 됩니다. Android 12 이상에서는 기분 GIF가, 그보다 낮은 버전에서는 정적 아이콘이 보입니다.
@@ -538,7 +538,7 @@ Turn on **「Use sign-in」** at the bottom of Settings:
 - **Show password:** **eye icon** beside fields
 - **Storage:** **encrypted hash only** on device; plaintext is never stored
 
-Verification email uses the [Vercel `dailylog` project](https://vercel.com/yourboardlab-s-projects/dailylog) API only. **Diary and ledger bodies are never sent.**
+Verification emails are sent via our authentication server. (Currently handled by a free-tier backend; policies may change in the future.)
 
 <p align="center">
   <img src="assets/auth_wizard_email.jpg" alt="Setup step 1 — email" width="240" />
@@ -597,7 +597,7 @@ Verification email uses the [Vercel `dailylog` project](https://vercel.com/yourb
 |-------|-------|
 | Sign-up bonus | **+29** (one time) |
 | Daily check-in | **+1** / day |
-| Share schedule | **−1** / share |
+| Share schedule | **−1** / share (sender & recipient each) |
 | Buy emoticon set | **−30** / set |
 | Coin recharge (cash) | *(coming soon)* |
 
@@ -605,7 +605,7 @@ Verification email uses the [Vercel `dailylog` project](https://vercel.com/yourb
 
 With a Bento account, share the selected month's **Today** and **Done?** items to another Bento account (by email).
 
-- **Cost**: **1 Yomi Coin** per share
+- **Cost**: **1 Yomi Coin** per share — both sender and recipient each spend 1 Coin
 - **Choose categories**: Today / Done? can be toggled individually
 - **Received**: items are added to the recipient's data for that month; nothing is deleted
 - **Expiry**: end of the shared month
@@ -687,10 +687,10 @@ Yes — memos, ledger, checklist, stats, mood, and the widget all work offline. 
 No — off by default. Enable in Settings when you want an app lock.
 
 **Q. Verification email not arriving?**  
-Check network, spam folder, and email address for typos. Sent via [Vercel dailylog](https://vercel.com/yourboardlab-s-projects/dailylog); heavy use may be rate-limited.
+Check network, spam folder, and email address for typos. Emails are currently sent via a free-tier backend. If usage grows beyond the free limit, we may need to move to a paid backend — in that case, Coin policies may be updated.
 
 **Q. Is there a fee?**  
-The app is free with no ads. Some features (schedule sharing, emoticon sets) require Yomi Coins, which you can earn free through daily check-ins.
+The app is free with no ads. Some features (schedule sharing, emoticon sets) require Yomi Coins, which you can earn free through daily check-ins. We're preparing more cute character sets and fun content — please enjoy using the app. (We need to eat too.)
 
 **Q. Home widget?**  
 Long-press the home screen → **Widgets** → add this app's widget. See **§7** above.
@@ -719,7 +719,7 @@ yourboardlab(이하 "개발자")이 제공하는 **요미 달력**(Yomi Calendar
 | 일정 공유·도시락(선택) | 사용자가 직접 선택해 공유한 **오늘은·했니 항목** | 공유 서버 (수신자 확인 후 처리) |
 | 도시락 계정(선택) | 이메일, 비밀번호 **해시**, Yomi Coin 잔액, 이모티콘 구매 이력 | 기기 및 도시락 서버 |
 | 로그인(선택) | 이메일, 비밀번호 **해시**, 마지막 로그인 이메일 | 기기 내부 저장소만 |
-| 인증 메일 | 로그인·도시락 가입·재설정 시 **이메일 주소·인증 코드·서명** | Vercel `dailylog` → SMTP (본문은 사용자 메일함만) |
+| 인증 메일 | 로그인·도시락 가입·재설정 시 **이메일 주소·인증 코드·서명** | 인증 서버 → SMTP (본문은 사용자 메일함만) |
 | 백업 파일 | 설정에서 **데이터보내기** 시 사용자가 만든 ZIP | 사용자가 선택한 위치(파일 앱 등) |
 | 공휴일 조회 | 설정 언어에 대응하는 **국가 코드**와 **연도** | 공휴일 API 요청 시에만 전송 |
 | 위젯 표시 | 오늘 날짜·기분·오늘은·체크 요약 등 앱과 동기화한 최소 정보 | 기기 내부(Android 위젯용 설정) |
@@ -727,7 +727,7 @@ yourboardlab(이하 "개발자")이 제공하는 **요미 달력**(Yomi Calendar
 개발자는 이름, 이메일(도시락/로그인 제외), 전화번호, 위치, 연락처, 사진 등을 앱 안에서 수집하지 않습니다.
 
 **3. 제3자 서비스**  
-- **일정 공유·도시락 서버:** 사용자가 선택한 일정 항목을 상대방에게 전달하기 위해 [Vercel `dailylog`](https://vercel.com/yourboardlab-s-projects/dailylog) 서버를 사용합니다. 일기·가계부·체크·기분 본문은 전송하지 않으며, 공유 기능을 사용하지 않을 경우 서버 통신은 발생하지 않습니다.
+- **일정 공유·도시락 서버:** 사용자가 선택한 일정 항목을 전달하기 위해 인증 서버를 사용합니다. 현재 무료 백엔드로 운영 중이며, 이용이 늘어나면 유료 전환이 필요할 수 있습니다. 일기·가계부·체크·기분 본문은 전송하지 않으며, 공유 기능을 사용하지 않을 경우 서버 통신은 발생하지 않습니다.
 - **공휴일 API:** [Nager.Date](https://date.nager.at) 공개 API를 사용합니다. **연도·국가 코드** 수준의 요청만 이루어집니다. 사용자가 작성한 메모 본문 등은 전송하지 않습니다.
 - 응답은 기기에 **캐시**되어, 이후 같은 연·월을 볼 때 네트워크 없이도 표시될 수 있습니다.
 
@@ -777,7 +777,7 @@ yourboardlab(이하 "개발자")이 제공하는 **요미 달력**(Yomi Calendar
 | Schedule sharing / Bento (optional) | **Today + Done?** items you select and share | Sharing server (processed on delivery) |
 | Bento account (optional) | Email, password **hash**, Yomi Coin balance, emoticon purchase history | Device + Bento server |
 | Sign-in (optional) | Email, **encrypted password hash**, last sign-in email | On-device storage only |
-| Verification email | Email address, verification code, signature when setting up or resetting | Vercel `dailylog` → SMTP (to your mailbox only) |
+| Verification email | Email address, verification code, signature when setting up or resetting | Authentication server → SMTP (to your mailbox only) |
 | Backup ZIP | ZIP created when you tap **Export** in Settings | Where you save the file |
 | Public holidays | **Country code** and **year** derived from your language setting | Sent only when calling the holiday API |
 | Home widget | Today's date, mood, short memo/checklist summaries synced from the app | On-device (Android widget preferences) |
@@ -785,7 +785,7 @@ yourboardlab(이하 "개발자")이 제공하는 **요미 달력**(Yomi Calendar
 We do **not** collect your name, phone number, contacts, photos, or precise location inside the app. Email is only processed when you optionally enable sign-in or Bento.
 
 **3. Third-party services**  
-- **Schedule sharing / Bento server:** When you choose to share, selected Today + Done? items are sent via the [Vercel `dailylog`](https://vercel.com/yourboardlab-s-projects/dailylog) server to reach the recipient. Diary, ledger, and mood bodies are never included. If you don't use sharing features, no server communication occurs.
+- **Schedule sharing / Bento server:** When you choose to share, selected Today + Done? items are delivered via our authentication server. Currently operated on a free-tier backend; a move to a paid backend may be needed if usage grows. Diary, ledger, and mood bodies are never included. If you don't use sharing features, no server communication occurs.
 - **Holiday API:** We use the public [Nager.Date](https://date.nager.at) API. Requests include **year and country code** only — not the text of your entries.
 - Responses may be **cached on your device** for offline reuse.
 
