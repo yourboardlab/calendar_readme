@@ -10,7 +10,7 @@
 
 | | |
 |---|---|
-| **현재 버전** | F.1.11 |
+| **현재 버전** | F.1.12 |
 | **스토어 표기** | 요미 달력 · Yomi Calendar (기기·언어에 따라 다를 수 있음) |
 
 <p align="center"><strong>목차</strong> · <a href="#장점-한-눈에">장점</a> · <a href="#기능-둘러보기">기능</a> · <a href="#편의-기능">편의</a> · <a href="#데이터-저장">데이터</a> · <a href="#faq">FAQ</a> · <a href="#english">English</a></p>
@@ -62,6 +62,8 @@
 | **썼니** | 수입·지출 한 줄씩 | 하단 **2번째** · 파란 **$** |
 | **했니** | 할 일·습관 체크 | 하단 **3번째** · 초록 체크 |
 | **기록** | 체중·공부·운동 등 숫자 | 하단 **4번째** · 보라 꺾은선 |
+
+**F.1.12:** 기록 이름 **선택 팝업** · 자주 쓰는 이름 **뱅크**(저장·수정·삭제).
 
 <p align="center">
   <img src="assets/release_hdr_memo.png" alt="오늘은" width="220" />
@@ -167,7 +169,9 @@
   <img src="assets/settings_daily_notif.png" alt="설정 — 알림 (오늘은·했니 시간)" width="340" />
 </p>
 
-**위젯** — **기분 위젯**(1×1) · **달력 위젯**(4×5, 이번 달 미니 달력). *(위젯 스크린샷 추가 예정)*
+**위젯 (F.1.12)** — **기분 위젯**(1×1) · **달력 위젯**(4×5, 이번 달 미니 달력·마커·오늘은 미리보기). 설정의 위젯 일정 표시와 연동.
+
+**Yomi Progress (F.1.12)** — 인증·도시락·공유·출석 등 서버 처리 중 캐릭터 GIF로 진행 상태 표시. 한국어는 캐릭터 이름 **이/가** 조사 자동.
 
 **가로 · 테마 · 10개 언어** — 파스텔 8색, ko/en/zh/ja/tl/vi/ru/es/de/fr, 언어별 공휴일.
 
@@ -217,7 +221,7 @@
 
 <p align="center"><strong><a href="#요미-달력--yomi-calendar">한국어</a> · <a href="#english">English</a></strong></p>
 
-**Version F.1.11** — A cute **life calendar**, not a work calendar. Log schedule, spending, todos, numbers, and mood **on one date**. **No ads.** **No account required** by default. Optional **Bento (도시락)** for Yomi Coin, sharing, and character packs.
+**Version F.1.12** — A cute **life calendar**, not a work calendar. Log schedule, spending, todos, numbers, and mood **on one date**. **No ads.** **No account required** by default. Optional **Bento (도시락)** for Yomi Coin, sharing, and character packs.
 
 ### Highlights
 
@@ -259,10 +263,12 @@
   <img src="assets/en_share_1.png" alt="Share" width="240" />
 </p>
 
-### Extras (F.1.11)
+### Extras (F.1.12)
 
-- **Notifications** — separate times for Today / Spent? / Done?; only on days with entries
-- **Two widgets** — Mood (1×1) and Calendar (4×5 mini month)
+- **Calendar widget (4×5)** + Mood widget (1×1) on Android home screen
+- **Yomi Progress** — character GIF status during server operations; Korean **이/가** auto by name
+- **Stats name picker** — persistent name bank (save / edit / delete)
+- **Notifications (F.1.11)** — separate times for Today / Spent? / Done?; only on days with entries
 - **Two logins** — App lock vs Bento tab access (3-min idle expiry)
 - **10 languages** + public holidays by language
 
@@ -288,7 +294,7 @@
 
 > **Google Play 등 스토어 등록용 공개 URL**  
 > `https://github.com/yourboardlab/calendar_readme#개인정보처리방침--privacy-policy`  
-> **최종 업데이트:** 2026-06-20 · **앱:** 요미 달력 (Yomi Calendar) · **버전:** F.1.11 · **운영:** yourboardlab
+> **최종 업데이트:** 2026-06-22 · **앱:** 요미 달력 (Yomi Calendar) · **버전:** F.1.12 · **운영:** yourboardlab
 
 ### 한국어
 
@@ -435,7 +441,8 @@ Yomi Coins are currently earned free via **daily check-in** (+1/day) and **sign-
 
 | 버전 | 날짜 | 요약 |
 |------|------|------|
-| **F.1.11** | 2026-06-18 | 탭별 알림, 앱/도시락 로그인 세션 분리, 차트 배타적 아코디언, 달력 위젯, 연결 끊기 UX |
+| **F.1.12** | 2026-06-22 | 달력 위젯(4×5), Yomi Progress, 기록 이름 뱅크, 한국어 조사 자동, 브랜드 메일 |
+| **F.1.11** | 2026-06-18 | 탭별 알림, 앱/도시락 로그인 세션 분리, 차트 배타적 아코디언, 기분 위젯, 연결 끊기 UX |
 | **F.1.10** | 2026-06-12 | 도시락·일정 공유, Yomi Coin, 기분 캐릭터 팩 |
 | **F.1.08** | 2026-05-29 | 달력에 오늘은 일정 표시(설정), 썼니 $ 아이콘 |
 | F.1.07 | 2026-05-27 | 선택 로그인, ZIP v4, 월 기분 배지 |
