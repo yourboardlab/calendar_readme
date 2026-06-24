@@ -10,7 +10,7 @@
 
 | | |
 |---|---|
-| **현재 버전** | F.1.12 |
+| **현재 버전** | F.1.15 |
 | **스토어 표기** | 요미 달력 · Yomi Calendar (기기·언어에 따라 다를 수 있음) |
 
 <p align="center"><strong>목차</strong> · <a href="#장점-한-눈에">장점</a> · <a href="#기능-둘러보기">기능</a> · <a href="#편의-기능">편의</a> · <a href="#데이터-저장">데이터</a> · <a href="#faq">FAQ</a> · <a href="#english">English</a></p>
@@ -221,7 +221,7 @@
 
 <p align="center"><strong><a href="#요미-달력--yomi-calendar">한국어</a> · <a href="#english">English</a></strong></p>
 
-**Version F.1.12** — A cute **life calendar**, not a work calendar. Log schedule, spending, todos, numbers, and mood **on one date**. **No ads.** **No account required** by default. Optional **Bento (도시락)** for Yomi Coin, sharing, and character packs.
+**Version F.1.15** — A cute **life calendar**, not a work calendar. Log schedule, spending, todos, numbers, and mood **on one date**. **No ads.** **No account required** by default. Optional **Bento (도시락)** for Yomi Coin, sharing, and character packs.
 
 ### Highlights
 
@@ -294,7 +294,7 @@
 
 > **Google Play 등 스토어 등록용 공개 URL**  
 > `https://github.com/yourboardlab/calendar_readme#개인정보처리방침--privacy-policy`  
-> **최종 업데이트:** 2026-06-22 · **앱:** 요미 달력 (Yomi Calendar) · **버전:** F.1.12 · **운영:** yourboardlab
+> **최종 업데이트:** 2026-06-24 · **앱:** 요미 달력 (Yomi Calendar) · **버전:** F.1.15 · **운영:** yourboardlab
 
 ### 한국어
 
@@ -441,6 +441,7 @@ Yomi Coins are currently earned free via **daily check-in** (+1/day) and **sign-
 
 | 버전 | 날짜 | 요약 |
 |------|------|------|
+| **F.1.15** | 2026-06-24 | 공개 테스트 릴리스 버전. F.1.13 이후 Play 테스트 트랙 재업로드용 versionCode 10015 |
 | **F.1.12** | 2026-06-22 | 달력 위젯(4×5), Yomi Progress, 기록 이름 뱅크, 한국어 조사 자동, 브랜드 메일 |
 | **F.1.11** | 2026-06-18 | 탭별 알림, 앱/도시락 로그인 세션 분리, 차트 배타적 아코디언, 기분 위젯, 연결 끊기 UX |
 | **F.1.10** | 2026-06-12 | 도시락·일정 공유, Yomi Coin, 기분 캐릭터 팩 |
