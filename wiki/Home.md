@@ -1,6 +1,6 @@
 # 요미 달력 Wiki
 
-요미 달력(Yomi Calendar) F.1.29 기준 공개 안내 문서입니다.
+요미 달력(Yomi Calendar)의 공개 안내 문서입니다.
 
 ## 문서
 

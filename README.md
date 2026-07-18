@@ -6,13 +6,11 @@
 
 | | |
 |---|---|
-| **현재 앱 버전** | **F.1.29** (`versionCode` 10029) |
-| **최종 구현 대조** | 2026-07-19 |
 | **플랫폼** | Android |
 | **Google Play** | [요미 달력 열기](https://play.google.com/store/apps/details?id=com.calendar_yomi) |
 | **문의** | [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com) |
 
-> 이 문서는 실제 앱 저장소의 F.1.29 코드와 서버 정책을 기준으로 작성했습니다. 일부 화면 이미지는 F.1.15 계열에서 촬영되어 최신 앱의 월간 사용 팁, 배경 스킨, 코인 가격 등 세부 UI와 다를 수 있습니다.
+> 일부 화면 이미지는 실제 앱과 세부 UI가 다를 수 있습니다. 기능과 이용 정책은 본문의 안내를 확인해 주세요.
 
 ---
 
@@ -77,7 +75,7 @@
 - 달력 상단에 이달의 기분 1위·2위 GIF 배지 표시
 - 기록 차트에서 이달의 기분 TOP 3 확인
 
-F.1.29 기준 카탈로그에는 고밋과 나양·몽구·톨키·푸디·말랑·달페니·후라이·몰리·하루방·규리가 포함되어 있습니다. 서버 카탈로그를 통해 새 캐릭터가 추가될 수 있습니다.
+현재 카탈로그에는 고밋과 나양·몽구·톨키·푸디·말랑·달페니·후라이·몰리·하루방·규리가 포함되어 있습니다. 서버 카탈로그를 통해 새 캐릭터가 추가될 수 있습니다.
 
 <p align="center">
   <img src="assets/mood_picker_open.png" alt="기분 선택 화면" width="280" />
@@ -110,7 +108,7 @@ F.1.29 기준 카탈로그에는 고밋과 나양·몽구·톨키·푸디·말�
 - Android 달력 위젯에도 같은 스킨 적용
 - 구매 후 설정 → 배경 스킨에서 언제든 변경
 - 다운로드가 끝난 구매 스킨은 오프라인에서도 사용
-- F.1.29 카탈로그: 소프트 피크닉, 다크 소프트 피크닉, 타이니 블룸 페이퍼, 스타리 코코아 나이트, 써니 쇼어, 마지막 잎새 길, 눈 내리는 골목, 바닷바람 건널목, 벚꽃 산책길, 파도놀이 해변, 송정 해변
+- 배경 스킨: 소프트 피크닉, 다크 소프트 피크닉, 타이니 블룸 페이퍼, 스타리 코코아 나이트, 써니 쇼어, 마지막 잎새 길, 눈 내리는 골목, 바닷바람 건널목, 벚꽃 산책길, 파도놀이 해변, 송정 해변
 
 색상 테마는 화면의 기본 색조를 바꾸고, 배경 스킨은 그 위에 일러스트를 더합니다. 둘을 함께 사용할 수 있습니다.
 
@@ -144,7 +142,7 @@ F.1.29 기준 카탈로그에는 고밋과 나양·몽구·톨키·푸디·말�
 
 ### 월간 사용 팁
 
-F.1.29에서는 세로 화면 달력에 캐릭터와 함께 **오늘의 사용 팁**을 보여줍니다. 팁 카탈로그는 서버에서 갱신하고 기기에 캐시하며, 긴 문장은 흐르는 글자로 표시됩니다. 팁을 준비하는 동안에도 달력 사용은 막지 않습니다.
+세로 화면 달력에는 캐릭터와 함께 **오늘의 사용 팁**이 표시됩니다. 팁 카탈로그는 서버에서 갱신하고 기기에 캐시하며, 긴 문장은 흐르는 글자로 표시됩니다. 팁을 준비하는 동안에도 달력 사용은 막지 않습니다.
 
 ### 가로 화면·공휴일·언어
 
@@ -160,7 +158,7 @@ F.1.29에서는 세로 화면 달력에 캐릭터와 함께 **오늘의 사용 �
 
 ### 현재 코인 정책
 
-| 항목 | F.1.29 기준 |
+| 항목 | 이용 정책 |
 |---|---:|
 | 기기 최초 가입 보너스 | **+5 Coin** (기기당 1회) |
 | 출석 체크 | **+1 Coin/일** |
@@ -244,7 +242,7 @@ Google Play 인앱 결제로 **30·55·115·230·350 Coin** 상품을 충전할 
 
 ### Bento and Yomi Coin
 
-| Item | F.1.29 policy |
+| Item | Policy |
 |---|---:|
 | First signup bonus | **+5 Coin** once per device |
 | Daily check-in | **+1 Coin/day** |
@@ -267,7 +265,7 @@ Calendar entry contents stay on the device unless the user explicitly shares sel
 
 ## 개인정보처리방침 · Privacy Policy
 
-> **최종 업데이트:** 2026-07-19 · **적용 앱:** 요미 달력 (Yomi Calendar) F.1.29 · **운영자:** yourboardlab
+> **최종 업데이트:** 2026-07-19 · **적용 앱:** 요미 달력 (Yomi Calendar) · **운영자:** yourboardlab
 >
 > **개인정보 문의:** [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com) · **삭제 요청:** [계정 및 데이터 삭제](ACCOUNT_DELETION.md)
 
@@ -357,7 +355,7 @@ Calendar entry contents stay on the device unless the user explicitly shares sel
 
 ### Privacy Policy in English
 
-**Last updated:** July 19, 2026 · **App:** Yomi Calendar F.1.29 · **Operator:** yourboardlab
+**Last updated:** July 19, 2026 · **App:** Yomi Calendar · **Operator:** yourboardlab
 
 User-created calendar entries are stored on the device and are not automatically cloud-synced. Limited information may be processed for optional online features and service operation.
 
@@ -373,23 +371,10 @@ Contact: [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com)
 
 ---
 
-## 지원 및 변경 이력
+## 지원
 
 - 소개 영상: [YouTube에서 보기](https://youtu.be/QZBNNUx_LD0)
 - 버그·개선 요청: [GitHub Issues](https://github.com/yourboardlab/calendar_readme/issues)
 - 이메일: [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com)
-
-| 버전 | 날짜 | 주요 변경 |
-|---|---|---|
-| **F.1.29** | 2026-07-16 | 월간 사용 팁 배너, 신규 캐릭터 카탈로그 보강, 최신 운영·가입 추적 개선 |
-| **F.1.27** | 2026-07-14 | Google Play 코인 지급 확인·복구 강화, 현재 정책(가입 +5, 캐릭터·스킨 15 Coin) 반영 |
-| **F.1.24~25** | 2026-07-12 | 위젯 아이콘, 구매 항목 필터·카탈로그 캐시, 결제 복구 안정화 |
-| **F.1.22** | 2026-07-08 | Google Play Yomi Coin 일회성 상품 연동 |
-| **F.1.17** | 2026-07-02 | 배경 스킨과 달력 위젯 스킨 연동, CDN 캐릭터, 새 항목 배지 |
-| **F.1.12** | 2026-06-22 | 달력 위젯 4×5, Yomi Progress, 기록 이름 뱅크 |
-| **F.1.11** | 2026-06-18 | 오늘은·했니 알림, 차트 아코디언, 기분 위젯, 로그인 세션 분리 |
-| **F.1.10** | 2026-06-12 | 도시락, Yomi Coin, 일정 공유, 캐릭터 팩 |
-| **F.1.08** | 2026-05-29 | 달력 일정 미리보기와 기록 마커 개선 |
-| **F.1.07** | 2026-05-27 | 선택형 앱 잠금, ZIP 백업, 월 기분 배지 |
 
 오늘을 가볍게 남기는 습관이, 어느 날 가장 따뜻한 기록이 됩니다.
