@@ -6,7 +6,10 @@ $md = [System.IO.File]::ReadAllText($readmePath, [System.Text.Encoding]::UTF8)
 
 function Slugify([string]$t) {
   $t = $t -replace '\s*\{#.*$', ''
-  $t = $t.Trim().ToLower() -replace '\s+', '-'
+  # Match GitHub-style heading anchors: remove punctuation, then replace each
+  # whitespace character with a hyphen (without collapsing adjacent spaces).
+  $t = $t.Trim().ToLower() -replace '[^\p{L}\p{Nd}\s-]', ''
+  $t = $t -replace '\s', '-'
   return $t
 }
 
@@ -117,7 +120,7 @@ $html = @"
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>요미 달력 · Yomi Calendar — 로컬 미리보기</title>
+  <title>Yomi Calendar - Local README Preview</title>
   <style>
     :root { --bg:#fff; --text:#1f2328; --muted:#656d76; --border:#d0d7de; --link:#0969da; --quote-bg:#f6f8fa; }
     @media (prefers-color-scheme: dark) {
@@ -144,7 +147,7 @@ $html = @"
   </style>
 </head>
 <body>
-  <div class="banner">로컬 미리보기 · <strong>preview.html</strong> · <code>README.md</code> 기준 · 이미지 <code>assets/</code> · 재생성: <code>.\build-preview.ps1</code></div>
+  <div class="banner">Local preview &middot; <strong>preview.html</strong> &middot; Source: <code>README.md</code> &middot; Images: <code>assets/</code> &middot; Rebuild: <code>.\build-preview.ps1</code></div>
   <main>
 $body
   </main>

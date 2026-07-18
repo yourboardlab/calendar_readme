@@ -1,464 +1,395 @@
-﻿# 요미 달력 · Yomi Calendar {#요미-달력--yomi-calendar}
+# 요미 달력 · Yomi Calendar
 
-> *A tiny calendar to capture your today — memos, money, todos, scores, and moods, all in one tap.*
+> 메모·지출·할 일·숫자·기분을 날짜 하나에 가볍게 남기는 광고 없는 생활 달력
 
-<p align="center"><strong><a href="#요미-달력--yomi-calendar">한국어</a> · <a href="#english">English</a></strong></p>
-
-**일정, 소비, 할 일, 숫자 기록, 기분 캐릭터를 한 날짜에 모아 기록하는 귀여운 생활 달력**입니다.
-
-무엇보다 **광고가 없습니다!** 하루의 기분을 **귀여운 캐릭터**로 표현할 수 있습니다. 일정을 가족에게 공유하고 싶을 때, 더 많은 캐릭터를 사용하고 싶을 때는 **도시락** 계정을 만들어 사용하셔야 해요! 계정을 만드시면 매일 출석 체크하여 **1 Yomi Coin**씩 모을 수 있어요. 처음 가입하면 **29 Yomi Coin**을 드립니다.
+<p align="center"><strong><a href="#한국어">한국어</a> · <a href="#english">English</a> · <a href="#개인정보처리방침--privacy-policy">개인정보처리방침</a> · <a href="ACCOUNT_DELETION.md">계정 및 데이터 삭제</a></strong></p>
 
 | | |
 |---|---|
-| **현재 버전** | F.1.15 |
-| **스토어 표기** | 요미 달력 · Yomi Calendar (기기·언어에 따라 다를 수 있음) |
+| **현재 앱 버전** | **F.1.29** (`versionCode` 10029) |
+| **최종 구현 대조** | 2026-07-19 |
+| **플랫폼** | Android |
+| **Google Play** | [요미 달력 열기](https://play.google.com/store/apps/details?id=com.calendar_yomi) |
+| **문의** | [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com) |
 
-<p align="center"><strong>목차</strong> · <a href="#장점-한-눈에">장점</a> · <a href="#기능-둘러보기">기능</a> · <a href="#편의-기능">편의</a> · <a href="#데이터-저장">데이터</a> · <a href="#faq">FAQ</a> · <a href="#english">English</a></p>
-
-<p align="center">
-  <img src="assets/release_drawer_calendar.png" alt="메인 달력 화면" width="300" />
-</p>
-
-### 소개 영상
-
-30초짜리 앱 소개 영상은 YouTube에서 볼 수 있습니다.
-
-▶ **[요미 달력 소개 영상 보기](https://youtu.be/QZBNNUx_LD0)**
+> 이 문서는 실제 앱 저장소의 F.1.29 코드와 서버 정책을 기준으로 작성했습니다. 일부 화면 이미지는 F.1.15 계열에서 촬영되어 최신 앱의 월간 사용 팁, 배경 스킨, 코인 가격 등 세부 UI와 다를 수 있습니다.
 
 ---
 
-## 장점 한 눈에 {#장점-한-눈에}
+## 한국어
 
-| 장점 | 한 줄 설명 |
-|------|-----------|
-| **광고 없음** | 기록하는 순간을 배너·전면 광고가 끼어들지 않습니다 |
-| **가입 없이 시작** | 이름·전화번호 없이 바로 쓸 수 있습니다. 서버 기능도 이메일 중심 |
-| **하루를 한곳에** | 오늘은 · 썼니 · 했니 · 기록 · 기분을 날짜 하나에 |
-| **귀여운 GUI** | 캐릭터 기분, 파스텔 테마, 친근한 메뉴명(오늘은/썼니/했니/도시락) |
-| **돌아보고 싶어지는 기록** | 월별 차트, 기분 배지, 달력 하단 마커 줄 |
-| **도시락 보상·공유** | 출석 +1 Coin, 가족·지인과 오늘은/했니만 부드럽게 공유 |
-| **내 데이터 소유** | ZIP 백업·복원, 선택적 앱 잠금, 로컬 우선 저장 |
+긴 일기는 부담스럽고 단순한 메모는 금방 잊힐 때, 요미 달력은 그 사이를 채웁니다. **오늘은·썼니·했니·기록·기분**을 한 날짜에 모으고, 달력과 월별 차트로 나의 생활 흐름을 돌아볼 수 있습니다.
 
----
-
-## 기능 둘러보기 {#기능-둘러보기}
-
-### 1. 광고 없이, 필요한 만큼만 — 조용한 개인 달력
-
-- **광고 없음** — 메모·가계부·체크 입력 중 배너가 끼어들지 않습니다
-- **기본 무료** — 달력·4종 기록·기분·차트·백업은 계정 없이 사용
-- **최소 정보** — 이름·생년월일·전화번호를 요구하지 않습니다
-- **로컬 우선** — 일기·가계부·기분 본문은 **휴대폰 안에만** 저장
+기본 기록은 계정 없이 사용할 수 있으며 기록 내용은 기기에 저장됩니다. 캐릭터·배경 스킨·Yomi Coin·일정 공유가 필요할 때만 선택적으로 **도시락 계정**을 사용합니다.
 
 <p align="center">
-  <img src="assets/release_drawer_calendar.png" alt="메인 달력 — 광고 없는 깔끔한 화면" width="300" />
+  <img src="assets/release_drawer_calendar.png" alt="요미 달력 기본 달력 화면" width="300" />
 </p>
 
-### 2. 하루를 한 날짜에 — 오늘은 · 썼니 · 했니 · 기록
+### 장점 한눈에 보기
 
-| 메뉴 | 하는 일 | 달력 표시 |
-|------|---------|-----------|
-| **오늘은** | 항목당 최대 10자 짧은 메모 | 하단 **1번째** · 핑크 하트 |
-| **썼니** | 수입·지출 한 줄씩 | 하단 **2번째** · 파란 **$** |
-| **했니** | 할 일·습관 체크 | 하단 **3번째** · 초록 체크 |
-| **기록** | 체중·공부·운동 등 숫자 | 하단 **4번째** · 보라 꺾은선 |
-
-**F.1.12:** 기록 이름 **선택 팝업** · 자주 쓰는 이름 **뱅크**(저장·수정·삭제).
-
-<p align="center">
-  <img src="assets/release_hdr_memo.png" alt="오늘은" width="220" />
-  &nbsp;
-  <img src="assets/release_hdr_ledger.png" alt="썼니" width="220" />
-</p>
-<p align="center">
-  <img src="assets/release_hdr_checklist.png" alt="했니" width="220" />
-  &nbsp;
-  <img src="assets/release_hdr_score.png" alt="기록" width="220" />
-</p>
-
-**달력 칸 한눈에** — 날짜 **아래 한 줄**에 **오늘은 → 썼니 → 했니 → 기록** 순서로 아이콘이 붙습니다(기록이 있는 항목만). 가운데는 **기분 캐릭터**. 설정 **「달력에 오늘은 일정 표시」** ON 시 오늘은 **최대 3줄** 미리 보기.
-
-<p align="center">
-  <img src="assets/calendar_markers.png" alt="달력 하단 마커 줄 (오늘은·썼니·했니·기록)" width="360" />
-</p>
-<p align="center">
-  <img src="assets/calendar_cell_markers.png" alt="날짜 칸 — 하단 마커 확대" width="120" />
-  &nbsp;
-  <img src="assets/setting_calendar_memo_on_cells.png" alt="설정 — 달력에 오늘은 일정 표시" width="280" />
-  &nbsp;
-  <img src="assets/calendar_memo_preview.png" alt="달력 칸에 오늘은 3줄 표시" width="280" />
-</p>
-
-### 3. 귀여운 캐릭터로 — 기분까지
-
-<p align="center">
-  <img src="assets/mood_picker_open.png" alt="기분 선택" width="280" />
-  &nbsp;
-  <img src="assets/mood_settings_concepts.png" alt="캐릭터 설정" width="280" />
-</p>
-
-**이 달의 기분 배지** — 1위(왼쪽·크게) · 2위(오른쪽·작게). 동률이면 **최근 기록**이 1위. 달력 상단 배지는 앱과 같이 **GIF**로 움직입니다.
-
-<p align="center">
-  <img src="assets/month_mood_badge.gif" alt="월별 기분 배지 (GIF)" width="360" />
-</p>
-
-### 4. 한 달이 모이면 — 기록 차트
-
-기분 podium · 썼니/했니 막대+누적 · 기록 꺾은선. **F.1.11:** 파스텔 아코디언 헤더 · **한 섹션만 펼침**(탭하면 나머지 자동 접힘).
-
-<p align="center">
-  <img src="assets/chart_monthly_teen.png" alt="기록 차트 — 오늘은(기분) 펼침" width="320" />
-  &nbsp;
-  <img src="assets/chart_accordion.gif" alt="기록 차트 — 섹션 탭 시 나머지 접힘" width="320" />
-</p>
-
-### 5. 도시락 — 출석 · 코인 · 가족 공유
-
-| 항목 | Yomi Coin |
-|------|-----------|
-| 가입 보너스 | **+29** (계정당 1회) |
-| 출석 | **+1** / 일 |
-| 일정 공유 | **−1** / 건 (송·수신 각자) |
-| 캐릭터 팩 | **−30** / 셋 |
-
-<p align="center">
-  <img src="assets/dosirak_email_1.png" alt="등록 이메일" width="200" />
-  &nbsp;
-  <img src="assets/dosirak_complete_4.png" alt="등록 완료" width="200" />
-</p>
-<p align="center">
-  <img src="assets/dosirak_coin_5.png" alt="도시락 메인" width="280" />
-  &nbsp;
-  <img src="assets/dosirak_assign_6.png" alt="출석 +1" width="280" />
-</p>
-
-**일정 공유** — **오늘은·했니**만. 썼니·기록·기분은 포함 안 됨.
-
-<p align="center">
-  <img src="assets/share_1.png" alt="공유 시작" width="220" />
-  &nbsp;
-  <img src="assets/share_2.png" alt="항목 선택" width="220" />
-</p>
-<p align="center">
-  <img src="assets/share_3.png" alt="공유 완료" width="220" />
-  &nbsp;
-  <img src="assets/share_4.png" alt="공유 이력" width="220" />
-</p>
-
-### 6. 내 기록은 내 것 — 백업 · 선택 잠금
-
-| 로그인 | 목적 | 세션 |
-|--------|------|------|
-| **앱 로그인** | 앱 실행 잠금 | 앱 완전 종료 시 세션 만료 |
-| **도시락 접근시** | 도시락 탭 보호 | **3분** 무활동 만료 |
-
-<p align="center">
-  <img src="assets/auth_gate_app.png" alt="앱 로그인 — 달력 아이콘" width="240" />
-  &nbsp;
-  <img src="assets/auth_gate_dosirak.png" alt="도시락 접근시 로그인 — 도시락 아이콘" width="240" />
-</p>
-
----
-
-## 편의 기능 {#편의-기능}
-
-**알림 (F.1.11)** — 오늘은 · 썼니 · 했니 **각각** 시간 설정. 항목 있는 날만 발송.
-
-<p align="center">
-  <img src="assets/settings_daily_notif.png" alt="설정 — 알림 (오늘은·했니 시간)" width="340" />
-</p>
-
-**위젯 (F.1.12)** — **기분 위젯**(1×1) · **달력 위젯**(4×5, 이번 달 미니 달력·마커·오늘은 미리보기). 설정의 위젯 일정 표시와 연동.
-
-**Yomi Progress (F.1.12)** — 인증·도시락·공유·출석 등 서버 처리 중 캐릭터 GIF로 진행 상태 표시. 한국어는 캐릭터 이름 **이/가** 조사 자동.
-
-**가로 · 테마 · 10개 언어** — 파스텔 8색, ko/en/zh/ja/tl/vi/ru/es/de/fr, 언어별 공휴일.
-
-<p align="center">
-  <img src="assets/calendar_landscape.png" alt="가로 모드 — 달력" width="880" />
-</p>
-<p align="center">
-  <img src="assets/theme_settings_swatches.png" alt="설정 — 색상 테마" width="300" />
-  &nbsp;
-  <img src="assets/settings_language.png" alt="설정 — 언어·화면 회전" width="300" />
-</p>
-
-> 스크린샷은 **paper** 테마 기준.
-
----
-
-## 데이터는 어디에? {#데이터-저장}
-
-- 기록 본문 → **휴대폰만** · 공유 시 **오늘은·했니**만 서버 경유
-- **내보내기/불러오기** ZIP으로 기기 간 이동
-
----
-
-## FAQ {#faq}
-
-**Q. 도시락과 일정 공유는 무엇인가요?**  
-**도시락**은 Yomi Coin·출석·캐릭터 팩·공유를 관리하는 공간입니다. **일정 공유**는 선택한 달의 **오늘은·했니**만 **공유받을 상대의 이메일 계정 정보와 함께 서버로 전송**됩니다(이메일 발송이 아닙니다). 상대방은 앱 **공유받기** 기능으로 받을 수 있습니다. **가계부·기분**은 포함되지 않습니다.
-
-**Q. 도시락 서버와 연결을 끊으면 Coin이 사라지나요?**  
-아닙니다. Yomi Coin과 구매한 팩은 보존됩니다.
-
-**Q. 앱 로그인과 도시락 접근시 로그인은 같은 건가요?**  
-아닙니다. 앱 로그인은 **앱 시작 잠금**, 도시락 접근시 로그인은 **도시락 탭 보호**(3분 무활동 만료)입니다.
-
-**Q. 인터넷 없이 쓸 수 있나요?**  
-네. 메모·가계부·체크·기록·기분·위젯·백업은 오프라인 가능. 공유·도시락은 인터넷 필요.
-
-**Q. iOS 버전은?**  
-안드로이드 정식 출시 이후 준비 들어갑니다. 상세 일정 문의: **yourboardlab@gmail.com**
-
----
-## English {#english}
-
-# Yomi Calendar · 요미 달력
-
-> *A tiny calendar to capture your today — memos, money, todos, scores, and moods, all in one tap.*
-
-<p align="center"><strong><a href="#요미-달력--yomi-calendar">한국어</a> · <a href="#english">English</a></strong></p>
-
-**Version F.1.15** — A cute **life calendar**, not a work calendar. Log schedule, spending, todos, numbers, and mood **on one date**. **No ads.** **No account required** by default. Optional **Bento (도시락)** for Yomi Coin, sharing, and character packs.
-
-### Highlights
-
-| | |
+| 장점 | 사용자에게 좋은 점 |
 |---|---|
-| **No ads** | Quiet recording without banners |
-| **One date, everything** | Today · Spent? · Done? · Stats · Mood |
-| **Cute GUI** | Character moods, pastel themes, friendly names |
-| **Monthly charts** | Patterns at a glance (F.1.11: exclusive accordion) |
-| **Bento** | Check-in +1 Coin/day, family sharing (Today + Done? only) |
-| **Your data** | On-device storage, ZIP export/import, optional app lock |
+| **광고 없음** | 기록 중 배너나 전면 광고가 흐름을 끊지 않습니다 |
+| **계정 없이 시작** | 달력·기록·기분·차트·위젯·백업을 바로 사용합니다 |
+| **하루를 한곳에** | 메모, 수입·지출, 체크리스트, 숫자, 기분을 날짜 하나에서 봅니다 |
+| **돌아보기 쉬움** | 달력 마커, 기분 배지, 월별 차트로 기록의 변화를 확인합니다 |
+| **홈 화면 꾸미기** | 기분·달력 위젯과 배경 스킨으로 자주 보고 싶은 달력을 만듭니다 |
+| **선택형 도시락** | 출석, 코인, 캐릭터·스킨, 가족·지인 공유 기능만 계정으로 사용합니다 |
+| **내 기록 직접 보관** | ZIP 내보내기·불러오기로 기록과 설정을 옮길 수 있습니다 |
+
+## 하루 기록하기
+
+### 오늘은 · 썼니 · 했니 · 기록
+
+| 메뉴 | 기록 내용 | 주요 기능 |
+|---|---|---|
+| **오늘은** | 일정과 짧은 메모 | 항목당 최대 10자, 날짜별 여러 항목, 개별 알림 시간 |
+| **썼니** | 수입·지출과 메모 | 수입·지출 자동 합계, 일별 순액·월 누적 차트 |
+| **했니** | 할 일과 습관 | 완료 체크, 요일 반복, 개별 알림 시간 |
+| **기록** | 체중·운동·수면·공부 등 숫자 | 하루 최대 3개, 자주 쓰는 이름 최대 5개 저장, 월 변화 차트 |
+
+날짜를 선택한 뒤 네 기록 카드를 순서대로 넘겨 입력합니다. 날짜 칸 아래에는 **오늘은 → 썼니 → 했니 → 기록** 순서로 색상 마커가 표시됩니다.
 
 <p align="center">
-  <img src="assets/en_release_drawer_calendar.png" alt="Main calendar" width="300" />
+  <img src="assets/release_hdr_memo.png" alt="오늘은 기록" width="210" />
+  <img src="assets/release_hdr_ledger.png" alt="썼니 기록" width="210" />
+  <img src="assets/release_hdr_checklist.png" alt="했니 기록" width="210" />
+  <img src="assets/release_hdr_score.png" alt="숫자 기록" width="210" />
 </p>
 
-### Four record types
+### 달력에 일정 표시
+
+설정의 **일정 표시**에서 앱 달력과 홈 화면 위젯을 각각 선택할 수 있습니다.
+
+- 켜짐: `오늘은`과 `했니` 내용을 날짜 칸에 최대 4줄 표시
+- 꺼짐: 기분 캐릭터와 네 가지 기록 마커 표시
+- 앱 달력 표시와 위젯 표시는 서로 독립적으로 설정
+- 개인 일정이 홈 화면에 보이는 것이 부담스럽다면 위젯 표시만 끌 수 있음
+
+## 기분 캐릭터와 한 달 돌아보기
+
+하루의 기분을 **행복·슬픔·화남·사랑·놀람·졸림·웃음·부끄러움**의 8가지 표정으로 남길 수 있습니다.
+
+- 기본 캐릭터 **고밋**은 계정 없이 사용
+- 도시락에서 추가 캐릭터를 Yomi Coin으로 구매
+- 캐릭터별 PNG·GIF를 내려받아 기기에 캐시하므로 준비된 항목은 오프라인에서도 표시
+- 달력 상단에 이달의 기분 1위·2위 GIF 배지 표시
+- 기록 차트에서 이달의 기분 TOP 3 확인
+
+F.1.29 기준 카탈로그에는 고밋과 나양·몽구·톨키·푸디·말랑·달페니·후라이·몰리·하루방·규리가 포함되어 있습니다. 서버 카탈로그를 통해 새 캐릭터가 추가될 수 있습니다.
 
 <p align="center">
-  <img src="assets/en_release_hdr_memo.png" alt="Today" width="200" />
-  &nbsp;
-  <img src="assets/en_release_hdr_ledger.png" alt="Spent?" width="200" />
-  &nbsp;
-  <img src="assets/en_release_hdr_checklist.png" alt="Done?" width="200" />
-  &nbsp;
-  <img src="assets/en_release_hdr_score.png" alt="Stats" width="200" />
+  <img src="assets/mood_picker_open.png" alt="기분 선택 화면" width="280" />
+  <img src="assets/month_mood_badge.gif" alt="월별 기분 배지" width="360" />
 </p>
 
-### Mood · Charts · Bento · Share
+### 기록 차트
+
+차트는 한 번에 한 카드만 펼치는 아코디언 방식입니다.
+
+- **기분:** 이달의 기분 TOP 3
+- **썼니:** 일별 순액 막대와 한 달 누적 흐름
+- **했니:** 완료 현황 막대와 완료 누적 흐름
+- **기록:** 저장한 숫자 항목별 꺾은선
 
 <p align="center">
-  <img src="assets/en_mood_picker_open.png" alt="Mood" width="240" />
-  &nbsp;
-  <img src="assets/en_chart_monthly_teen.png" alt="Charts" width="240" />
+  <img src="assets/chart_monthly_teen.png" alt="월별 기록 차트" width="320" />
+  <img src="assets/chart_accordion.gif" alt="차트 아코디언 동작" width="320" />
 </p>
+
+## 꾸미기와 위젯
+
+### 색상 테마와 배경 스킨
+
+**색상 테마**는 계정 없이 사용할 수 있는 앱 색상 팔레트입니다. 미드나잇·페이퍼·민트·피치·라벤더·스카이·로즈·샌드 8가지를 제공합니다.
+
+**배경 스킨**은 도시락에서 구매하는 일러스트 배경입니다.
+
+- 달력·차트·설정·드로어 등 앱 전반에 적용
+- Android 달력 위젯에도 같은 스킨 적용
+- 구매 후 설정 → 배경 스킨에서 언제든 변경
+- 다운로드가 끝난 구매 스킨은 오프라인에서도 사용
+- F.1.29 카탈로그: 소프트 피크닉, 다크 소프트 피크닉, 타이니 블룸 페이퍼, 스타리 코코아 나이트, 써니 쇼어, 마지막 잎새 길, 눈 내리는 골목, 바닷바람 건널목, 벚꽃 산책길, 파도놀이 해변, 송정 해변
+
+색상 테마는 화면의 기본 색조를 바꾸고, 배경 스킨은 그 위에 일러스트를 더합니다. 둘을 함께 사용할 수 있습니다.
+
 <p align="center">
-  <img src="assets/en_dosirak_coin_5.png" alt="Bento" width="240" />
-  &nbsp;
-  <img src="assets/en_share_1.png" alt="Share" width="240" />
+  <img src="assets/theme_settings_swatches.png" alt="8가지 색상 테마" width="320" />
 </p>
 
-### Extras (F.1.12)
+### Android 홈 화면 위젯
 
-- **Calendar widget (4×5)** + Mood widget (1×1) on Android home screen
-- **Yomi Progress** — character GIF status during server operations; Korean **이/가** auto by name
-- **Stats name picker** — persistent name bank (save / edit / delete)
-- **Notifications (F.1.11)** — separate times for Today / Spent? / Done?; only on days with entries
-- **Two logins** — App lock vs Bento tab access (3-min idle expiry)
-- **10 languages** + public holidays by language
+| 위젯 | 기본 크기 | 표시 내용 |
+|---|---:|---|
+| **기분 위젯** | 1×1 | 오늘 날짜와 기분 캐릭터 |
+| **달력 위젯** | 4×5, 크기 조절 가능 | 이번 달 달력, 오늘, 기록 마커 또는 오늘은·했니 미리보기 |
 
-<p align="center">
-  <img src="assets/en_auth_gate_app.png" alt="App sign-in — calendar icon" width="240" />
-  &nbsp;
-  <img src="assets/en_auth_gate_dosirak.png" alt="Bento access sign-in — lunchbox icon" width="240" />
-</p>
-<p align="center">
-  <img src="assets/en_release_drawer_settings.png" alt="Settings" width="280" />
-  &nbsp;
-  <img src="assets/en_theme_settings_swatches.png" alt="Themes" width="280" />
-</p>
+- 위젯을 누르면 앱 실행
+- 달력 위젯에 구매한 배경 스킨 연동
+- 일정 표시를 끄면 홈 화면의 개인 텍스트를 숨기고 캐릭터·마커 중심으로 표시
+- 앱에서 동기화된 데이터와 캐시된 스킨은 오프라인에서도 표시
 
-### FAQ (English)
+배경 스킨을 입힌 큰 달력 위젯은 홈 화면을 꾸미는 동시에 기록을 자주 눈에 띄게 해, 하루 기록을 잊지 않도록 돕습니다.
 
-**Q. Bento & sharing?** Yomi Coin account for check-in, packs, and sharing **Today + Done?** only — never ledger or mood bodies.  
-**Q. Offline?** Core features yes; sharing needs internet.  
-**Q. iOS?** Development begins after the Android official release. Schedule inquiries: **yourboardlab@gmail.com**
+## 알림·편의 기능
+
+### 오늘은·했니 알림
+
+- `오늘은`과 `했니`의 기본 알림 시간을 각각 설정
+- 기록이 있는 날에만 기본 알림 발송
+- 개별 오늘은·했니 항목에 별도 알림 시간 지정 가능
+- Android 13 이상은 알림 권한, Android 12 이상 일부 기기는 정확한 알람 권한 필요
+- 배터리 최적화 설정에 따라 알림이 늦거나 누락될 수 있음
+
+### 월간 사용 팁
+
+F.1.29에서는 세로 화면 달력에 캐릭터와 함께 **오늘의 사용 팁**을 보여줍니다. 팁 카탈로그는 서버에서 갱신하고 기기에 캐시하며, 긴 문장은 흐르는 글자로 표시됩니다. 팁을 준비하는 동안에도 달력 사용은 막지 않습니다.
+
+### 가로 화면·공휴일·언어
+
+- 가로 모드에서 달력과 차트 레이아웃 확장
+- 일요일·공휴일은 빨간색, 토요일은 파란색
+- 언어 설정에 맞는 국가 공휴일 이름 표시
+- 공휴일은 처음 조회할 때 인터넷이 필요할 수 있으며 이후 기기 캐시 사용
+- 10개 언어, 11개 로케일: 한국어, English (US/UK), 中文, 日本語, Tagalog, Tiếng Việt, Русский, Español, Deutsch, Français
+
+## 도시락·Yomi Coin·공유
+
+도시락은 필수 계정이 아니라 **캐릭터·스킨·코인·공유를 위한 선택 기능**입니다. 이메일 인증 후 사용할 수 있습니다.
+
+### 현재 코인 정책
+
+| 항목 | F.1.29 기준 |
+|---|---:|
+| 기기 최초 가입 보너스 | **+5 Coin** (기기당 1회) |
+| 출석 체크 | **+1 Coin/일** |
+| 캐릭터 1종 | **15 Coin** |
+| 배경 스킨 1종 | **15 Coin** |
+| 일정 공유 보내기 | **1 Coin/건** |
+| 일정 공유받기 | **1 Coin/건** |
+
+Google Play 인앱 결제로 **30·55·115·230·350 Coin** 상품을 충전할 수 있습니다. 실제 가격·통화·세금은 국가와 Play 스토어에 따라 달라질 수 있으며, 결제 화면에 표시되는 Google Play 가격이 기준입니다.
+
+구매한 캐릭터·스킨과 코인 잔액은 도시락 계정에 연결됩니다. 앱을 다시 설치하거나 기기를 바꾼 뒤 같은 계정으로 로그인하면 구매 권리를 다시 확인할 수 있습니다.
+
+### 일정 공유
+
+- 선택한 달의 **오늘은·했니** 항목만 공유
+- **썼니·숫자 기록·기분**은 공유 대상이 아님
+- 보내는 사람과 받는 사람이 각각 1 Coin 사용
+- 받기는 기존 기록을 지우지 않고 중복되지 않는 항목만 합침
+- 공유 항목은 해당 월이 끝나면 받을 수 없음
+- 받는 사람 확인을 위해 이메일 인증 코드 사용
+
+## 데이터 보관과 백업
+
+- 기본 달력 기록은 자동 클라우드 동기화하지 않고 기기에 저장
+- 공유를 직접 실행할 때 선택한 오늘은·했니 항목만 공유 서버로 전송
+- 설정 → **데이터 내보내기**에서 기록과 앱 설정을 ZIP으로 저장
+- Android 앱은 내보낸 ZIP을 `Documents/LifelongCalendar/`에도 보관
+- **데이터 불러오기**는 ZIP 또는 이전 JSON 백업을 지원하며 현재 데이터를 백업 내용으로 바꾸므로 먼저 내보내기를 권장
+- 도시락의 코인·구매 권리와 기기의 달력 기록은 서로 다른 데이터이므로, 기기 변경 전 ZIP 백업 필요
+
+사용 기록 통계와 서버 기능에서 처리하는 정보는 아래 [개인정보처리방침](#개인정보처리방침--privacy-policy)에 구체적으로 설명합니다.
+
+## FAQ
+
+**Q. 회원가입이 꼭 필요한가요?**
+
+아닙니다. 달력·네 가지 기록·기분·차트·위젯·알림·백업은 계정 없이 사용할 수 있습니다. 도시락, 코인, 추가 캐릭터·스킨, 공유 기능에만 이메일 계정이 필요합니다.
+
+**Q. 인터넷 없이 쓸 수 있나요?**
+
+기본 기록·차트·위젯·알림·백업은 오프라인에서 동작합니다. 공휴일 최초 조회, 카탈로그·사용 팁 갱신, 새 캐릭터·스킨 다운로드, 도시락·공유·코인·결제에는 인터넷이 필요합니다.
+
+**Q. 기록이 서버에 자동 저장되나요?**
+
+달력 기록 본문은 자동 동기화되지 않습니다. 공유할 때 선택한 오늘은·했니만 서버를 경유합니다. 서비스 운영과 개선에 필요한 앱 이용·기술 정보는 처리될 수 있지만 메모·가계부·체크·숫자·기분 내용은 포함하지 않습니다.
+
+**Q. 앱 로그인과 도시락 계정은 같은가요?**
+
+아닙니다. 앱 로그인은 기기에서 앱 실행을 보호하는 선택 잠금이고, 도시락 계정은 서버 기반 코인·구매·공유 기능용입니다. 도시락 접근 잠금은 3분 동안 동작이 없으면 만료됩니다.
+
+**Q. 도시락 서버와 연결을 끊으면 코인과 구매 항목도 삭제되나요?**
+
+아닙니다. 연결 끊기는 로그인 자격증명과 현재 세션을 제거하지만 코인·구매 권리는 보존합니다. 전체 계정과 연관 데이터 삭제는 [계정 및 데이터 삭제 안내](ACCOUNT_DELETION.md)를 이용해 주세요.
+
+**Q. iOS 버전이 있나요?**
+
+현재 공개 구현은 Android용입니다. iOS 일정은 [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com)으로 문의해 주세요.
 
 ---
+
+## English
+
+**Yomi Calendar** is a cute life calendar for keeping short memos, income and expenses, checklists, numeric logs, and moods together on one date. Core recording features work without an account and entries stay on the device. An optional **Bento** account enables Yomi Coin, extra characters, illustrated background skins, in-app coin top-ups, and sharing.
+
+### Core features
+
+- **Today:** short memo items, up to 10 characters each, with optional item reminders
+- **Spent?:** income and expense entries with daily balance and monthly trend
+- **Done?:** checklists, completion tracking, weekday repeats, and item reminders
+- **Stats:** up to three numeric entries per day and a five-name reusable bank
+- **Mood:** eight expressions, animated monthly badges, and a monthly TOP 3 chart
+- **Calendar:** record markers or up to four lines of Today + Done? text
+- **Charts:** mood, money, checklist, and numeric trends in collapsible cards
+- **Themes:** eight free color themes
+- **Background skins:** illustrated skins applied across the app and Calendar widget
+- **Widgets:** Mood 1×1 and resizable Calendar 4×5
+- **Notifications:** separate daily Today/Done? times and per-item reminder times
+- **Monthly tips:** a cached, server-updated usage-tip banner on the portrait calendar
+- **Languages:** 10 languages across 11 locales, with locale-aware public holidays
+- **Backup:** ZIP export/import; Android also saves exports under `Documents/LifelongCalendar/`
+
+### Bento and Yomi Coin
+
+| Item | F.1.29 policy |
+|---|---:|
+| First signup bonus | **+5 Coin** once per device |
+| Daily check-in | **+1 Coin/day** |
+| Mood character | **15 Coin** |
+| Background skin | **15 Coin** |
+| Send a share | **1 Coin** |
+| Receive a share | **1 Coin** |
+
+Google Play one-time products add **30, 55, 115, 230, or 350 Coin**. The price shown by Google Play for the user's country and currency is authoritative.
+
+Sharing includes only the selected month's **Today + Done?** items. Ledger, numeric logs, and moods are not shared. Received items merge without removing existing entries, and monthly shares expire at the beginning of the next month.
+
+### Offline and privacy summary
+
+Core entries, charts, prepared widgets, notifications, and backups work offline. Initial holiday lookup, catalog and tip updates, new asset downloads, Bento, sharing, coins, and payments need internet access.
+
+Calendar entry contents stay on the device unless the user explicitly shares selected Today + Done? items. Limited app-usage and technical data may be processed for operation and improvement, but it does not include memo, ledger, checklist, numeric-log, or mood contents. See the full [Privacy Policy](#개인정보처리방침--privacy-policy) and [Account & Data Deletion](ACCOUNT_DELETION.md) guide.
+
+---
+
 ## 개인정보처리방침 · Privacy Policy
 
-> **Google Play 등 스토어 등록용 공개 URL**  
-> `https://github.com/yourboardlab/calendar_readme#개인정보처리방침--privacy-policy`  
-> **최종 업데이트:** 2026-06-24 · **앱:** 요미 달력 (Yomi Calendar) · **버전:** F.1.15 · **운영:** yourboardlab
+> **최종 업데이트:** 2026-07-19 · **적용 앱:** 요미 달력 (Yomi Calendar) F.1.29 · **운영자:** yourboardlab
+>
+> **개인정보 문의:** [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com) · **삭제 요청:** [계정 및 데이터 삭제](ACCOUNT_DELETION.md)
 
-### 한국어
+### 1. 개요
 
-**1. 개요**  
-yourboardlab(이하 "개발자")이 제공하는 **요미 달력**(Yomi Calendar)은 사용자가 직접 입력한 일기·메모·가계부·체크·기록·기분 데이터를 **사용자 기기 안에만** 저장하는 앱입니다. **앱 로그인**과 **도시락 접근시 로그인**은 선택이며, 각각 독립 세션으로 동작합니다. **도시락** 기능으로 Yomi Coin 계정을 만들어 일정 공유 및 이모티콘 구매를 할 수 있으며, 공유 기능 사용 시에만 선택한 **오늘은·했니** 항목이 서버를 경유합니다. 클라우드 동기화·광고 식별자 추적은 하지 않습니다.
+요미 달력의 메모·가계부·체크리스트·숫자 기록·기분 내용은 기본적으로 사용자 기기에 저장되며 자동으로 클라우드에 동기화하지 않습니다. 선택형 온라인 기능과 서비스 운영을 위해 필요한 범위의 정보만 서버에서 처리될 수 있습니다.
 
-**2. 수집·처리하는 정보**
+앱은 광고 SDK나 Android 광고 ID 권한을 사용하지 않으며, 사용자 정보를 판매하거나 광고 목적으로 제3자에게 제공하지 않습니다.
 
-| 구분 | 내용 | 저장 위치 |
-|------|------|-----------|
-| 사용자 입력 | 메모(오늘은), 가계부(썼니), 체크(했니), 숫자 기록, 기분, 설정(테마·언어·회전 등) | 기기 내부 저장소만 |
-| 일정 공유·도시락(선택) | 사용자가 직접 선택해 공유한 **오늘은·했니 항목** | 공유 서버 (수신자 확인 후 처리) |
-| 도시락 계정(선택) | 이메일, 비밀번호 **해시**, Yomi Coin 잔액, 이모티콘 구매 이력 | 기기 및 도시락 서버 |
-| 로그인(선택) | 이메일, 비밀번호 **해시**, 마지막 로그인 이메일 | 기기 내부 저장소만 |
-| 인증 메일 | 로그인·도시락 가입·재설정 시 **이메일 주소·인증 코드·서명** | 인증 서버 → SMTP (본문은 사용자 메일함만) |
-| 백업 파일 | 설정에서 **데이터보내기** 시 사용자가 만든 ZIP | 사용자가 선택한 위치(파일 앱 등) |
-| 공휴일 조회 | 설정 언어에 대응하는 **국가 코드**와 **연도** | 공휴일 API 요청 시에만 전송 |
-| 위젯 표시 | 오늘 날짜·기분·오늘은·체크 요약 등 앱과 동기화한 최소 정보 | 기기 내부(Android 위젯용 설정) |
+### 2. 처리하는 정보
 
-개발자는 이름, 이메일(도시락/로그인 제외), 전화번호, 위치, 연락처, 사진 등을 앱 안에서 수집하지 않습니다.
+| 구분 | 처리 범주 |
+|---|---|
+| **기기 내 데이터** | 사용자가 작성한 기록, 설정, 위젯용 정보와 직접 만든 백업 |
+| **계정 정보** | 선택형 도시락 계정의 이메일 및 인증·세션 정보 |
+| **서비스·거래 정보** | 코인·구매 권리, 결제 확인, 이메일 인증 및 사용자가 요청한 일정 공유에 필요한 정보 |
+| **앱 이용·기술 정보** | 서비스 운영, 오류 대응, 보안과 기능 개선에 필요한 앱 사용, 앱·기기·네트워크 및 대략적 지역 정보 |
+| **기능 요청 정보** | 공휴일, 콘텐츠·사용 팁, 자산 다운로드와 업데이트 확인에 필요한 요청 정보 |
 
-**3. 제3자 서비스**  
-- **일정 공유·도시락 서버:** 사용자가 선택한 일정 항목을 전달하기 위해 인증 서버를 사용합니다. 현재 무료 백엔드로 운영 중이며, 이용이 늘어나면 유료 전환이 필요할 수 있습니다. 일기·가계부·체크·기분 본문은 전송하지 않으며, 공유 기능을 사용하지 않을 경우 서버 통신은 발생하지 않습니다.
-- **공휴일 API:** [Nager.Date](https://date.nager.at) 공개 API를 사용합니다. **연도·국가 코드** 수준의 요청만 이루어집니다. 사용자가 작성한 메모 본문 등은 전송하지 않습니다.
-- 응답은 기기에 **캐시**되어, 이후 같은 연·월을 볼 때 네트워크 없이도 표시될 수 있습니다.
+앱 이용·기술 정보에는 사용자가 작성한 기록 본문이 포함되지 않습니다. 앱은 연락처·사진·카메라·마이크·정밀 위치·광고 ID 권한을 요청하지 않습니다.
 
-**4. 이용 목적**  
-앱 기능 제공(달력 표시, 기록·차트, 홈 화면 위젯, 알람 알림 등), 사용자 설정 반영(언어, 테마, 기분 캐릭터 등), 사용자가 요청한 보내기·불러오기.
+### 3. 이용 목적
 
-**5. 보관 기간**  
-앱 데이터는 사용자가 삭제·앱 제거·데이터 초기화할 때까지 기기에 보관됩니다. 공휴일 캐시는 기기 내부에 일정 기간 보관 후 갱신될 수 있습니다.
+- 앱 기능과 사용자가 선택한 온라인 서비스 제공
+- 계정·코인·구매·공유·결제 처리와 고객 지원
+- 서비스 안정성·보안 유지, 오류 대응과 기능 개선
 
-**6. 제3자 제공·판매**  
-개발자는 사용자 데이터를 **판매하거나**, 광고 목적으로 **제3자와 공유하지 않습니다.**
+### 4. 외부 서비스 및 처리 위탁
 
-**7. 권한 (Android)**
+- **Google Play:** 결제 및 구매 확인
+- **Vercel, Neon, Redis 기반 저장소 및 Vercel Blob:** 서버 운영, 데이터 저장과 콘텐츠 전송
+- **SMTP 메일 서비스:** 계정 및 공유 인증 메일 발송
+- **[Nager.Date](https://date.nager.at):** 공휴일 조회
+
+각 서비스는 기능 제공에 필요한 범위에서 정보를 처리할 수 있으며 서버가 대한민국 밖에 있을 수 있습니다.
+
+### 5. 보관 기간
+
+- 기기 내 데이터와 백업은 사용자가 직접 삭제할 때까지 보관됩니다.
+- 서버 데이터는 기능 제공과 운영에 필요한 기간 또는 계정 삭제 요청 시까지 보관합니다.
+- 인증 및 공유를 위한 임시 정보는 목적 달성이나 유효기간 종료 후 삭제 또는 만료 처리합니다.
+- 결제·보안 관련 정보는 환불, 분쟁 처리, 부정 이용 방지와 법적 의무에 필요한 기간 보관할 수 있습니다.
+- 보관 목적이 끝난 정보는 삭제하거나 관계 법령이 허용하는 방식으로 분리·비식별 처리합니다.
+
+### 6. 보안
+
+서버 통신 암호화, 인증 정보 보호, 접근 제한과 유효기간 관리 등 합리적인 보호 조치를 적용합니다. 다만 인터넷 전송과 전자적 저장의 특성상 절대적인 보안을 보장할 수는 없습니다.
+
+### 7. 제3자 제공·판매
+
+개발자는 사용자 정보를 판매하거나 광고 목적으로 제공하지 않습니다. 위 서비스 제공업체는 앱 기능과 운영에 필요한 범위에서 정보를 처리할 수 있습니다. 일정 공유 시에는 사용자가 선택한 내용이 지정한 수신자에게 전달됩니다.
+
+### 8. Android 권한
 
 | 권한 | 용도 |
-|------|------|
-| 인터넷 | 공휴일 API 조회, 일정 공유, 인증 메일 발송 |
-| 부팅 완료 수신 | 홈 화면 위젯 날짜 갱신 |
-| 정확한 알람 | 사용자가 설정한 **알람** 알림 예약 |
+|---|---|
+| 인터넷 | 온라인 콘텐츠, 계정·코인·공유·결제와 서비스 운영 |
+| Google Play 결제 | 사용자가 선택한 Yomi Coin 일회성 상품 구매 |
+| 알림 게시 | 오늘은·했니 및 개별 항목 알림 |
+| 정확한 알람 | 사용자가 설정한 시각에 알림 예약 |
+| 부팅 완료 수신 | 재부팅 후 위젯 날짜와 알림 일정 복원 |
+| 배터리 최적화 제외 요청 | 사용자가 설정한 알림의 지연·누락 감소 |
 
-**8. 아동**  
-앱은 만 13세 미만을 대상으로 설계되지 않았으며, 개발자는 아동의 개인정보를 고의로 수집하지 않습니다.
+앱은 위치·연락처·사진·카메라·마이크·광고 ID 권한을 요청하지 않습니다.
 
-**9. 국제 이전**  
-사용자 입력 데이터는 사용자 기기에만 남습니다. 공휴일 API·공유 서버는 해외에 서버가 있을 수 있습니다.
+### 9. 이용자의 선택과 삭제
 
-**10. 이용자 권리**  
-- 앱 **설정 → 보내기**로 데이터를 ZIP으로 받을 수 있습니다.
-- **불러오기**·앱 삭제·기기 초기화로 데이터를 지울 수 있습니다.
-- 문의: **yourboardlab@gmail.com**
+- 설정 → 데이터 내보내기로 기록·설정을 받을 수 있습니다.
+- 앱에서 기록을 삭제하거나 앱 데이터를 초기화·제거할 수 있습니다.
+- 일정 표시를 꺼 앱 달력·위젯에서 개인 텍스트를 숨길 수 있습니다.
+- 도시락 서버 연결 끊기는 자격증명·세션만 삭제하고 코인·구매 권리는 보존합니다.
+- 전체 도시락 계정과 연관 데이터 삭제는 [계정 및 데이터 삭제 안내](ACCOUNT_DELETION.md)에 따라 요청할 수 있습니다.
 
-**11. 정책 변경**  
-중요한 변경 시 이 README를 갱신하고, 필요한 경우 앱 또는 스토어를 통해 안내할 수 있습니다.
+일부 결제·보안 기록은 관련 법적 의무, 환불, 사기 방지와 분쟁 처리를 위해 필요한 범위에서 보관될 수 있으며 가능한 경우 계정과 분리하거나 비식별 처리합니다.
 
----
+### 10. 아동
 
-### English
+요미 달력은 만 13세 미만 아동을 대상으로 설계되지 않았으며, 개발자는 아동의 개인정보를 고의로 수집하지 않습니다.
 
-**1. Overview**  
-**Yomi Calendar** (요미 달력), operated by **yourboardlab**, stores your entries **on your device only**. **App sign-in** and **Bento access sign-in** are optional and use **independent sessions** (Bento access expires after 3 minutes idle). Use **Bento** for Yomi Coin, sharing, and emoticon packs; only selected **Today + Done?** items pass through our server when you share. No cloud sync or ad tracking.
+### 11. 변경 및 문의
 
-**2. Information we process**
+기능이나 처리 방식이 달라지면 이 문서의 날짜와 내용을 갱신하고 필요한 경우 앱 또는 스토어에서 안내합니다.
 
-| Type | Examples | Where it stays |
-|------|----------|----------------|
-| Your entries | Memos, expenses, checklists, scores, moods, app settings | On-device storage only |
-| Schedule sharing / Bento (optional) | **Today + Done?** items you select and share | Sharing server (processed on delivery) |
-| Bento account (optional) | Email, password **hash**, Yomi Coin balance, emoticon purchase history | Device + Bento server |
-| Sign-in (optional) | Email, **encrypted password hash**, last sign-in email | On-device storage only |
-| Verification email | Email address, verification code, signature when setting up or resetting | Authentication server → SMTP (to your mailbox only) |
-| Backup ZIP | ZIP created when you tap **Export** in Settings | Where you save the file |
-| Public holidays | **Country code** and **year** derived from your language setting | Sent only when calling the holiday API |
-| Home widget | Today's date, mood, short memo/checklist summaries synced from the app | On-device (Android widget preferences) |
+- 운영자: **yourboardlab**
+- 개인정보 및 삭제 문의: [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com)
+- 이슈·제안: [GitHub Issues](https://github.com/yourboardlab/calendar_readme/issues)
 
-We do **not** collect your name, phone number, contacts, photos, or precise location inside the app. Email is only processed when you optionally enable sign-in or Bento.
+### Privacy Policy in English
 
-**3. Third-party services**  
-- **Schedule sharing / Bento server:** When you choose to share, selected Today + Done? items are delivered via our authentication server. Currently operated on a free-tier backend; a move to a paid backend may be needed if usage grows. Diary, ledger, and mood bodies are never included. If you don't use sharing features, no server communication occurs.
-- **Holiday API:** We use the public [Nager.Date](https://date.nager.at) API. Requests include **year and country code** only — not the text of your entries.
-- Responses may be **cached on your device** for offline reuse.
+**Last updated:** July 19, 2026 · **App:** Yomi Calendar F.1.29 · **Operator:** yourboardlab
 
-**4. Purposes**  
-Provide app features (calendar, charts, home-screen widget, alarm notifications), apply your preferences (language, theme, mood character, etc.), and support import/export when you choose.
+User-created calendar entries are stored on the device and are not automatically cloud-synced. Limited information may be processed for optional online features and service operation.
 
-**5. Retention**  
-App data remains on your device until you delete it, clear app data, or uninstall. Holiday cache may expire and refresh over time.
+The categories processed include on-device entries and settings; optional account and authentication information; service and transaction information needed for coins, entitlements, payments, verification, and user-requested sharing; app-usage and technical information needed for operations, diagnostics, security, and improvement; and request information needed for holidays, content delivery, and updates. App-usage and technical information does not include user-authored calendar contents. The app does not request contacts, photos, camera, microphone, precise location, or the Android advertising ID.
 
-**6. Sharing / sale**  
-We **do not sell** your data or share it with third parties for advertising.
+Information is used to provide app features, process accounts and transactions, support users, maintain security and reliability, respond to errors, and improve the service. Providers may include Google Play, Vercel, Neon, Redis-based storage, Vercel Blob, SMTP mail services, and Nager.Date. Processing may occur outside the user's country.
 
-**7. Android permissions**
+Reasonable safeguards such as encrypted transmission, protected authentication information, access controls, and expiration management are applied. Local data remains until the user deletes it. Server data is retained while needed to provide the service or until an applicable deletion request. Temporary information expires after its purpose or validity period ends. Payment and security records may be retained as needed for refunds, disputes, fraud prevention, or legal obligations.
 
-| Permission | Purpose |
-|------------|---------|
-| Internet | Public holidays, schedule sharing, verification emails |
-| Receive boot completed | Refresh the home-screen widget date |
-| Schedule exact alarms | Deliver **alarms** you set in the app |
+We do not sell user data or provide it to third parties for advertising. Users can export or delete local data, hide schedule text from the app/widget, and request full account-associated deletion through [Account & Data Deletion](ACCOUNT_DELETION.md). Some payment or security records may be retained where legally or operationally required and, where possible, disassociated or de-identified.
 
-**8. Children**  
-The app is not directed at children under 13, and we do not knowingly collect their personal information.
-
-**9. International transfers**  
-Your entries stay on your device. Holiday API and sharing server requests may reach servers operated outside your country.
-
-**10. Your choices**  
-- **Export** your data as a ZIP from Settings.
-- **Import**, uninstall, or reset the app to remove data.
-- Contact: **yourboardlab@gmail.com**
-
-**11. Changes**  
-We may update this policy by revising this README and, when appropriate, notifying users via the app or store listing.
+Contact: [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com)
 
 ---
 
-## 코인 충전 (준비 중)
+## 지원 및 변경 이력
 
-현재 Yomi Coin은 **출석 체크**(하루 +1코인)와 **가입 보너스**(+29코인)로 무료 적립되며, 이 코인으로 일정 공유(1코인/건)나 이모티콘 셋(30코인/셋)을 이용할 수 있습니다. 향후 현금으로 코인을 충전하는 기능이 추가될 예정입니다.
+- 소개 영상: [YouTube에서 보기](https://youtu.be/QZBNNUx_LD0)
+- 버그·개선 요청: [GitHub Issues](https://github.com/yourboardlab/calendar_readme/issues)
+- 이메일: [yourboardlab@gmail.com](mailto:yourboardlab@gmail.com)
 
-> 광고 없이 앱을 지속적으로 개선하기 위한 방향으로, 무료 핵심 기능(달력·메모·가계부·체크·기분)은 계속 무료로 유지됩니다.
+| 버전 | 날짜 | 주요 변경 |
+|---|---|---|
+| **F.1.29** | 2026-07-16 | 월간 사용 팁 배너, 신규 캐릭터 카탈로그 보강, 최신 운영·가입 추적 개선 |
+| **F.1.27** | 2026-07-14 | Google Play 코인 지급 확인·복구 강화, 현재 정책(가입 +5, 캐릭터·스킨 15 Coin) 반영 |
+| **F.1.24~25** | 2026-07-12 | 위젯 아이콘, 구매 항목 필터·카탈로그 캐시, 결제 복구 안정화 |
+| **F.1.22** | 2026-07-08 | Google Play Yomi Coin 일회성 상품 연동 |
+| **F.1.17** | 2026-07-02 | 배경 스킨과 달력 위젯 스킨 연동, CDN 캐릭터, 새 항목 배지 |
+| **F.1.12** | 2026-06-22 | 달력 위젯 4×5, Yomi Progress, 기록 이름 뱅크 |
+| **F.1.11** | 2026-06-18 | 오늘은·했니 알림, 차트 아코디언, 기분 위젯, 로그인 세션 분리 |
+| **F.1.10** | 2026-06-12 | 도시락, Yomi Coin, 일정 공유, 캐릭터 팩 |
+| **F.1.08** | 2026-05-29 | 달력 일정 미리보기와 기록 마커 개선 |
+| **F.1.07** | 2026-05-27 | 선택형 앱 잠금, ZIP 백업, 월 기분 배지 |
 
-## Coin Recharge (coming soon)
-
-Yomi Coins are currently earned free via **daily check-in** (+1/day) and **sign-up bonus** (+29 once). Use coins for schedule sharing (1 coin each) or emoticon sets (30 coins each). A paid top-up option will be added in a future update.
-
-> Core features (calendar, memos, ledger, checklists, mood) remain free. Coins support continued development without ads.
-
----
-
-## 지원 / 문의
-
-- 사용 중 문제, 새로운 기분 캐릭터 / 테마 제안, 혹은 단순한 후기 — 모두 환영합니다.
-- 이슈 등록: [Issues 탭](https://github.com/yourboardlab/calendar_readme/issues/new) 에 자유롭게 글을 남겨 주세요.
-- 비지니스 및 문의 사항: **yourboardlab@gmail.com**
-- 홈페이지: [yourboardlab.github.io](https://yourboardlab.github.io/)
-- 소개 영상: [YouTube — 요미 달력 소개](https://youtu.be/QZBNNUx_LD0)
-- 개인정보처리방침: [이 README의 개인정보처리방침 섹션](https://github.com/yourboardlab/calendar_readme#개인정보처리방침--privacy-policy)
-
----
-
-## 변경 이력
-
-| 버전 | 날짜 | 요약 |
-|------|------|------|
-| **F.1.15** | 2026-06-24 | 공개 테스트 릴리스 버전. F.1.13 이후 Play 테스트 트랙 재업로드용 versionCode 10015 |
-| **F.1.12** | 2026-06-22 | 달력 위젯(4×5), Yomi Progress, 기록 이름 뱅크, 한국어 조사 자동, 브랜드 메일 |
-| **F.1.11** | 2026-06-18 | 탭별 알림, 앱/도시락 로그인 세션 분리, 차트 배타적 아코디언, 기분 위젯, 연결 끊기 UX |
-| **F.1.10** | 2026-06-12 | 도시락·일정 공유, Yomi Coin, 기분 캐릭터 팩 |
-| **F.1.08** | 2026-05-29 | 달력에 오늘은 일정 표시(설정), 썼니 $ 아이콘 |
-| F.1.07 | 2026-05-27 | 선택 로그인, ZIP v4, 월 기분 배지 |
-| F.1.04 | 2026-05-19 | 공휴일 API, 홈 위젯, 가로 모드 |
-
----
-
-## 라이선스 / 저작권
-
-- 앱 자체의 코드 라이선스는 별도 비공개 저장소에서 관리됩니다.
-- 이 저장소(`calendar_readme`)의 텍스트와 스크린샷은 © 2026 yourboardlab. All rights reserved.
-- 사용된 캐릭터 자산은 yourboardlab 의 PNG/GIF 입니다.
-
----
-
-<p align="center">
-  <em>오늘을 가볍게 남기는 습관이, 어느 날 가장 따뜻한 기록이 됩니다.</em>
-</p>
+오늘을 가볍게 남기는 습관이, 어느 날 가장 따뜻한 기록이 됩니다.

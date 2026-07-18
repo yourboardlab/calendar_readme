@@ -1,9 +1,18 @@
-Play Store 휴대전화 스크린샷 (F.1.12, 최신 앱 UI)
-1080x1920 PNG, 9:16
+Play Store 휴대전화 스크린샷 보관본
 
-01_달력.png — calendar main
-02_차트.png — chart accordion
-03_설정.png — theme settings
-04_도시락.png — lunchbox main
+폴더명 SotreInfo는 초기 저장소 경로 호환을 위해 그대로 유지합니다.
 
-생성: capture_store_screenshots.mjs + build_store_posters.py
+01_달력.png — 달력 메인
+02_차트.png — 기록 차트
+03_설정.png — 색상 테마
+04_도시락.png — 도시락
+
+주의:
+- 2026-07-01 제작된 F.1.17 이전 UI 자료입니다.
+- 현재 앱 F.1.29의 월간 사용 팁, 신규 캐릭터, 배경 스킨과 코인 충전 화면은 포함하지 않습니다.
+- 도시락 이미지의 가입 보너스 29 Coin, 캐릭터 30 Coin 표시는 현재 정책과 다릅니다.
+- F.1.29 기준 정책은 가입 보너스 5 Coin, 캐릭터·배경 스킨 각 15 Coin입니다.
+- 최신 스토어 제출 전에 실제 F.1.29 화면으로 다시 촬영해야 합니다.
+
+이미지 크기: 1080×1920 PNG (9:16)
+초기 생성 도구: capture_store_screenshots.mjs + build_store_posters.py
